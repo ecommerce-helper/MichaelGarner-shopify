@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.hero",
+  "name": "Hero",
+  "sections": {
+    "175954872556bdb47d": {
+      "type": "apps",
+      "settings": {}
+    },
+    "hero-logo": {
+      "type": "hero-logo",
+      "disabled": true,
+      "settings": {
+        "link_to_home_page": true,
+        "mobile_text_scale": 6,
+        "desktop_text_scale": 10,
+        "use_default_logo": false,
+        "logo": "shopify://shop_images/trace.jpg",
+        "liquid": "",
+        "alignment": "center",
+        "logo_max_width": 45,
+        "enable_overlay": false,
+        "overlay_offset": 100,
+        "color_scheme": "scheme_1",
+        "space_above": 1,
+        "space_below": 0
+      }
+    },
+    "white_space_nEymQE": {
+      "type": "white-space",
+      "disabled": true,
+      "name": "White space",
+      "settings": {
+        "desktop_height": 240
+      }
+    }
+  },
+  "order": [
+    "175954872556bdb47d",
+    "hero-logo",
+    "white_space_nEymQE"
+  ]
+}

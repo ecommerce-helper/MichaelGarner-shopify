@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "aside",
+  "name": "Overlay",
+  "sections": {
+    "menu": {
+      "type": "menu-drawer",
+      "blocks": {
+        "menu": {
+          "type": "menu",
+          "settings": {
+            "menu": "main-menu",
+            "nested_navigation_style": "accordion",
+            "accordion_icon": "plus_minus",
+            "show_cart": false,
+            "show_collection_products_count": false
+          }
+        },
+        "social-media": {
+          "type": "social_media",
+          "settings": {
+            "display": "text"
+          }
+        }
+      },
+      "block_order": [
+        "menu",
+        "social-media"
+      ],
+      "settings": {
+        "show_search": false,
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "drawer_position": "rightDrawer",
+        "vertical_space_between_blocks": 1,
+        "desktop_text_scale": 0,
+        "mobile_text_scale": 0
+      }
+    },
+    "popup": {
+      "type": "popup",
+      "settings": {
+        "enable": false,
+        "delay": 4,
+        "frequency": 30,
+        "title": "Sign up to our mailing list",
+        "text": "<p>Special offers and first looks</p>",
+        "call_to_action": "button",
+        "cta_url": "",
+        "cta_text": "Shop Now"
+      }
+    }
+  },
+  "order": [
+    "menu",
+    "popup"
+  ]
+}

@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "rich-text": {
+          "type": "rich_text",
+          "settings": {
+            "richtext": "<p>Trace | Power & Light for Everyone</p>",
+            "text_alignment": "text-left",
+            "show_block_on_mobile": false,
+            "block_width_on_mobile": "",
+            "block_width_on_desktop": "2",
+            "fill_remaining_space": false
+          }
+        },
+        "rich-text-1": {
+          "type": "rich_text",
+          "settings": {
+            "richtext": "",
+            "text_alignment": "text-left",
+            "show_block_on_mobile": false,
+            "block_width_on_mobile": "",
+            "block_width_on_desktop": "3",
+            "fill_remaining_space": false
+          }
+        },
+        "horizontal-menu": {
+          "type": "horizontal_menu",
+          "settings": {
+            "menu": "main-menu",
+            "nested_navigation_style": "dropdown",
+            "desktop_text_alignment": "lg:justify-end",
+            "show_cart": false,
+            "separate_with_comma": false,
+            "show_block_on_mobile": false,
+            "block_width_on_mobile": "",
+            "block_width_on_desktop": "2",
+            "fill_remaining_space": true
+          }
+        }
+      },
+      "block_order": [
+        "rich-text",
+        "rich-text-1",
+        "horizontal-menu"
+      ],
+      "settings": {
+        "logo_max_width": 200,
+        "cart": "h|h",
+        "drawer_menu": "s|h",
+        "enable_search": false,
+        "use_icons": false,
+        "logo_block_width_on_desktop": "2",
+        "utility_links_block_width_on_desktop": "2",
+        "padding": 1,
+        "align_content": "items-top",
+        "sticky_header": false,
+        "enable_centered_logo": false,
+        "enable_overlay_on_homepage": false,
+        "enable_overlay_on_collection_pages": false,
+        "enable_overlay_on_product_pages": false,
+        "enable_overlay_on_article_pages": false,
+        "enable_overlay_on_page_templates": false,
+        "overlay_color_scheme": "",
+        "use_alternate_logo": true,
+        "color_scheme": "",
+        "desktop_text_scale": 0,
+        "mobile_text_scale": 0,
+        "show_grid_guidelines": false
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}

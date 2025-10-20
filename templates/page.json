@@ -1,0 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "text_alignment": "text-left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "feature_text_YBnUD4": {
+      "type": "feature-text",
+      "name": "Feature text",
+      "settings": {
+        "richtext": "",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "rte font-main",
+        "desktop_text_scale": 4,
+        "mobile_text_scale": 2,
+        "text_alignment": "text-left",
+        "content_width_on_desktop": "12",
+        "content_position_on_desktop": "left",
+        "show_top_border": false,
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "rev_section_1_KxELK3": {
+      "type": "rev_section-1",
+      "name": "Slider Revolution--Section 1",
+      "settings": {}
+    },
+    "rev_section_2_jbKYih": {
+      "type": "rev_section-2",
+      "name": "Slider Revolution--Section 2",
+      "settings": {}
+    },
+    "rev_section_3_3zqEVL": {
+      "type": "rev_section-3",
+      "name": "Slider Revolution--Section 3",
+      "settings": {}
+    },
+    "rev_section_4_6GcwV4": {
+      "type": "rev_section-4",
+      "name": "Slider Revolution--Section 4",
+      "settings": {}
+    },
+    "rev_section_5_RpLaK7": {
+      "type": "rev_section-5",
+      "name": "Slider Revolution--Section 5",
+      "settings": {}
+    },
+    "rev_section_6_ALVWLD": {
+      "type": "rev_section-6",
+      "name": "Slider Revolution--Section 6",
+      "settings": {}
+    },
+    "rev_section_7_jk7UqE": {
+      "type": "rev_section-7",
+      "name": "Slider Revolution--Section 7",
+      "settings": {}
+    },
+    "rev_section_8_qVAjjP": {
+      "type": "rev_section-8",
+      "name": "Slider Revolution--Section 8",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "feature_text_YBnUD4",
+    "rev_section_1_KxELK3",
+    "rev_section_2_jbKYih",
+    "rev_section_3_3zqEVL",
+    "rev_section_4_6GcwV4",
+    "rev_section_5_RpLaK7",
+    "rev_section_6_ALVWLD",
+    "rev_section_7_jk7UqE",
+    "rev_section_8_qVAjjP"
+  ]
+}

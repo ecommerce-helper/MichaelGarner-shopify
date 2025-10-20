@@ -1,0 +1,58 @@
+<template data-should-teleport="#left-drawer-slot">
+  <div
+    x-show="$store.modals.leftDrawer.contents === '{{ sidebar_drawer_id }}'"
+    class="sidebar-nav text-scheme-text text-menu-drawer max-h-full flex flex-col h-screen"
+  >    
+    <div class="p-2 lg:p-4 w-full shrink-0 overflow-hidden">
+      <div class="relative flex items-center justify-end">
+        <button @click.prevent="$store.modals.close('{{ sidebar_drawer_id }}')" class="block top-0 min-touch-target">
+          <span class="sr-only">{{ 'general.accessibility.close_modal' | t }}</span>
+          <span class="inline-block w-4 h-4">{%- render 'icon-close' -%}</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="overflow-hidden overflow-y-auto p-2 lg:p-4 pb-8">
+      <nav>
+        <ul>
+          {%- for childlink in link.links -%}
+            <li>
+              <a
+                href="{{ childlink.url }}"
+                class="break-words hover:underline block py-1{% if childlink.current %} underline{% endif %}"
+                {% if childlink.current %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{ childlink.title | escape }}
+              </a>
+              {%- if childlink.links != blank -%}
+                {%- liquid
+                  assign padding = 'pl-5'
+                  if settings.desktop_menu_drawer_heading_scale > 2
+                    assign padding = 'pl-5 lg:pl-10'
+                  endif
+                -%}
+                <ul role="list" class="{{ padding }}">
+                  {%- for grandchildlink in childlink.links -%}
+                    <li>
+                      <a
+                        href="{{ grandchildlink.url }}"
+                        class="break-words hover:underline block py-1{% if grandchildlink.current %} underline{% endif %}"
+                        {% if grandchildlink.current %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ grandchildlink.title | escape }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</template>

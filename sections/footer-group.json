@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "hero-logo": {
+      "type": "hero-logo",
+      "disabled": true,
+      "settings": {
+        "link_to_home_page": true,
+        "mobile_text_scale": 6,
+        "desktop_text_scale": 10,
+        "use_default_logo": true,
+        "logo": "shopify://shop_images/trace.jpg",
+        "liquid": "",
+        "alignment": "center",
+        "logo_max_width": 40,
+        "enable_overlay": false,
+        "overlay_offset": 100,
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 0.5
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "social-media": {
+          "type": "social_media",
+          "settings": {
+            "heading": "",
+            "display": "icons",
+            "text_layout": "vertical",
+            "text_alignment": "text-left",
+            "block_width_on_desktop": "50"
+          }
+        }
+      },
+      "block_order": [
+        "social-media"
+      ],
+      "settings": {
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "enable_follow_on_shop": false,
+        "show_payment_icons": false,
+        "grayscale_payment_icons": false,
+        "show_policies": false,
+        "color_scheme": "",
+        "space_above": 0.5,
+        "space_below": 0,
+        "show_grid_guidelines": false
+      }
+    }
+  },
+  "order": [
+    "hero-logo",
+    "footer"
+  ]
+}

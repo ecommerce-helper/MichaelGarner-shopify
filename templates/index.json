@@ -1,0 +1,485 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "video_JhP7nK": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "title": "",
+        "video": "shopify://files/videos/Manifold-Trace-Video-FINAL.mp4",
+        "mode": "autoplay",
+        "playback": "inline",
+        "caption": "",
+        "link": "",
+        "enable_full_bleed": true
+      }
+    },
+    "custom_liquid_z3mEEh": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "title": "",
+        "custom_liquid": "<center><a href=\"LINK TO WHERE YOU WANT IMAGE TO GO WHEN CLLICKED\"> <img src=\"https://cdn.shopify.com/s/files/1/0821/2548/8426/files/tq0sfld-kickstarter-logo-green.png?v=1698423343&width=960\" alt=\"PICTURE NAME\" style=\"width: 350px;\"> </a>",
+        "text_alignment": "text-center",
+        "liquid_only": false,
+        "show_top_border": false,
+        "color_scheme": "",
+        "space_above": 0.5,
+        "space_below": 0.5
+      }
+    },
+    "image_slideshow_k9XmiG": {
+      "type": "image-slideshow",
+      "blocks": {
+        "image_Mt9N7H": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "caption": "Elements",
+            "link": ""
+          }
+        },
+        "image_HiY3gn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LM2_NoisyBump_Wide.png",
+            "caption": "Light Modulators",
+            "link": ""
+          }
+        },
+        "image_YQwi9G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T_Connect_on_Trace.png",
+            "caption": "Conductors & Connectors",
+            "link": ""
+          }
+        },
+        "image_pUhJJB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TPS.png",
+            "caption": "Power & Control",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Mt9N7H",
+        "image_HiY3gn",
+        "image_YQwi9G",
+        "image_pUhJJB"
+      ],
+      "name": "Image slideshow",
+      "settings": {
+        "title": "",
+        "mode": "horizontal",
+        "style": "full_screen",
+        "section_height": "h-screen-adaptive",
+        "section_height_desktop": "same_as_mobile",
+        "max_width_of_slides": 80,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "footer",
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": ""
+      }
+    },
+    "collage_TFL3B4": {
+      "type": "collage",
+      "blocks": {
+        "image_NCjwt4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-4.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_9LwQrM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-5.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_JUbcxA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_jwDaUP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_Cn4z6U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-3.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_q9Ey4A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LM3_ShiledSpherical.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_YT4ghB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-13_ad09cf94-c323-4573-8694-4a080e2a3af5.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_iXLLB6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LM2_Noisy_Bump.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_zTAHU7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LM2_Noisy_Nubs_Closeup.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_fjHpgV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manifold-Trace-Imagery-16.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_k9YWWW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/moire_1_e37b11e1-fa09-48af-8d5d-9a321722d29a.jpg",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_xEkXiF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T_Connect_on_Trace.png",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_NCjwt4",
+        "image_9LwQrM",
+        "image_JUbcxA",
+        "image_jwDaUP",
+        "image_Cn4z6U",
+        "image_q9Ey4A",
+        "image_YT4ghB",
+        "image_iXLLB6",
+        "image_zTAHU7",
+        "image_fjHpgV",
+        "image_k9YWWW",
+        "image_xEkXiF"
+      ],
+      "disabled": true,
+      "name": "Collage",
+      "settings": {
+        "title": "",
+        "grid_type": "modular",
+        "mobile_columns": "2",
+        "desktop_columns": 2,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "1",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "follow_mouse_on_hover",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": true
+      }
+    },
+    "featured_collection_67fmbD": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "title": "",
+        "collection": "trace",
+        "products_to_show": 3,
+        "show_view_all": false,
+        "grid_type": "standard",
+        "mobile_columns": "2",
+        "desktop_columns": 3,
+        "standard_layout_align_items": "items-end",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 0.5,
+        "space_below": 0.5,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "featured_collection_mRqRCQ": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "title": "",
+        "collection": "light-modulators",
+        "products_to_show": 25,
+        "show_view_all": false,
+        "grid_type": "justified",
+        "mobile_columns": "2",
+        "desktop_columns": 2,
+        "standard_layout_align_items": "items-center",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 0.5,
+        "modular_no_crop_media_mobile": true,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "1.778",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "follow_mouse_on_hover",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "featured_collection_Dckib6": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "title": "",
+        "collection": "conductors-accessories",
+        "products_to_show": 6,
+        "show_view_all": false,
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 4,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "feature_text_nwaUXb": {
+      "type": "feature-text",
+      "disabled": true,
+      "name": "Feature text",
+      "settings": {
+        "richtext": "<p>TRACE | POWER & CONTROL</p>",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "rte font-main",
+        "desktop_text_scale": 1,
+        "mobile_text_scale": 2,
+        "text_alignment": "text-center",
+        "content_width_on_desktop": "6",
+        "content_position_on_desktop": "center",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "featured_collection_8neKpz": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "title": "",
+        "collection": "power-control",
+        "products_to_show": 6,
+        "show_view_all": false,
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 3,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "rich_text_6UAmUK": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "title": "",
+        "richtext": "",
+        "text_alignment": "text-left",
+        "cta_link": "",
+        "cta_label": "",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "title": "Sign up to our mailing list",
+        "richtext": "<p>Special offers & First Looks</p>",
+        "show_top_border": true,
+        "color_scheme": "scheme_1",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "collection_carousel_EJmazw": {
+      "type": "collection-carousel",
+      "disabled": true,
+      "name": "Collection (carousel)",
+      "settings": {
+        "title": "Collection carousel",
+        "collection": "trace",
+        "products_to_show": 6,
+        "show_view_all": false,
+        "item_width_mobile": 80,
+        "item_width_desktop": 40,
+        "snap_alignment": "snap-start",
+        "align_items": "items-start",
+        "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": true,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": true,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "rev_slider_1_6Yntyj": {
+      "type": "rev_slider-1",
+      "disabled": true,
+      "name": "Slider Revolution--Slider 1",
+      "settings": {}
+    },
+    "video_jtKpbz": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "title": "",
+        "video": "shopify://files/videos/Glance_5a2d0665-b324-4ae4-8e2a-02310d089137.mp4",
+        "mode": "preview",
+        "playback": "inline",
+        "caption": "",
+        "link": "",
+        "enable_full_bleed": false
+      }
+    }
+  },
+  "order": [
+    "video_JhP7nK",
+    "custom_liquid_z3mEEh",
+    "image_slideshow_k9XmiG",
+    "collage_TFL3B4",
+    "featured_collection_67fmbD",
+    "featured_collection_mRqRCQ",
+    "featured_collection_Dckib6",
+    "feature_text_nwaUXb",
+    "featured_collection_8neKpz",
+    "rich_text_6UAmUK",
+    "newsletter",
+    "collection_carousel_EJmazw",
+    "rev_slider_1_6Yntyj",
+    "video_jtKpbz"
+  ]
+}
