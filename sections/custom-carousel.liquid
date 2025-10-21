@@ -134,15 +134,12 @@
   {% endif %}
 
   <div class="swiper thumb-slider">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
+              style="width: min-content"
+            {% endif %}>
       {% for block in section.blocks %}
         {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
-          <div
-            class="swiper-slide"
-            {% if section.blocks.size < 6 %}
-              style="width: min-content"
-            {% endif %}
-          >
+          <div class="swiper-slide">
             <img
               src="{{ block.settings.child_carousel_image | img_url: "master" }}"
               alt="Child Carousel Image"
