@@ -158,7 +158,7 @@
       "name": "Custom Images Carousel",
       "settings": {
         "main_carousel_title": "",
-        "main_carousel_top_border": 28,
+        "main_carousel_top_border": 42,
         "main_carousel_bottom_border": 27,
         "main_carousel_left_border": 37,
         "main_carousel_right_border": 20,
