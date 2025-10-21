@@ -4,7 +4,7 @@
   {% endif %}
 
   {% for block in section.blocks %}
-    {% if block.settings.main_carousel_image != blank and block.settings.parent_carousel_image != blank %}
+    {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
       <div class="swiper main-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -38,7 +38,7 @@
   "settings": [
     {
       "type": "header",
-      "content": "Slider Setting"
+      "content": "Main Carousel Setting"
     },
     {
       "type": "text",
@@ -64,6 +64,15 @@
       "unit": "px",
       "label": "Main Carousel Top and Bottom Border",
       "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Child Carousel Setting"
+    },
+    {
+      "type": "text",
+      "id": "child_carousel_title",
+      "label": "Child Carousel Title"
     },
     {
       "type": "checkbox",
@@ -104,13 +113,13 @@
         },
         {
           "type": "image_picker",
-          "id": "parent_carousel_image",
-          "label": "Parent Carousel Image"
+          "id": "child_carousel_image",
+          "label": "child Carousel Image"
         },
         {
           "type": "richtext",
-          "id": "parent_carousel_text",
-          "label": "Parent Carousel Text"
+          "id": "child_carousel_text",
+          "label": "child Carousel Text"
         }
       ]
     }
