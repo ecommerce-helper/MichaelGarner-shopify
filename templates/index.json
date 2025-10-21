@@ -124,7 +124,6 @@
         },
         "main_image_wcr6rQ": {
           "type": "main_image",
-          "disabled": true,
           "settings": {
             "main_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg",
             "main_carousel_text": "",
