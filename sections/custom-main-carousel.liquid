@@ -90,7 +90,7 @@
       nextEl: '.main-next',
       prevEl: '.main-prev',
     },
-    {% if section.settings.auto_slide == true %}
+    {% if section.settings.auto_slide == false %}
       autoplay: {
         delay: {{ section.settings.auto_main_slide_speed }},
         disableOnInteraction: false,
