@@ -1,4 +1,4 @@
-<style>
+{% comment %} <style>
   body {
     font-family: Arial, sans-serif;
     background: #1a1a1a;
@@ -97,7 +97,7 @@
   .thumb-slider .swiper-button-prev {
     color: #333;
   }
-</style>
+</style> {% endcomment %}
 
 <section>
   {% if section.settings.main_carousel_title != blank %}
@@ -156,7 +156,7 @@
   </div>
 </section>
 
-<script>
+{% comment %} <script>
   // Thumbnail Swiper
   var thumbSwiper = new Swiper('.thumb-slider', {
     spaceBetween: 10,
@@ -223,7 +223,7 @@
   const mainEl = document.querySelector('.main-slider');
   mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
   mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
-</script>
+</script> {% endcomment %}
 
 {% schema %}
 {
