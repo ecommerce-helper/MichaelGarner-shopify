@@ -197,18 +197,18 @@
     thumbs: {
       swiper: thumbSwiper,
     },
-    autoplay: {
+    {% comment %} autoplay: {
       delay: {{ section.settings.auto_main_slide_speed }},
       disableOnInteraction: false, // keep autoplay running after user interaction
-    },
+    }, {% endcomment %}
     speed: 800, // smooth slide transition
   });
 
   // Optional: autoplay the thumbnail slider too (to stay in sync)
-  thumbSwiper.params.autoplay = {
+  {% comment %} thumbSwiper.params.autoplay = {
     delay: {{ section.settings.auto_thumb_slide_speed }},
     disableOnInteraction: false,
-  };
+  }; {% endcomment %}
   {% comment %} thumbSwiper.autoplay.start(); {% endcomment %}
 
   // Optional: pause autoplay when hovering main slider
