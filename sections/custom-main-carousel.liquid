@@ -45,6 +45,36 @@
     z-index: 10;
   }
 
+  .thumb-title {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 2px solid #aaa;
+  }
+
+  .thumb-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+  }
+
+  .thumb-slider .swiper-slide-thumb-active img {
+    opacity: 1;
+    border: 3px solid #fff;
+  }
+
+  .thumb-slider .swiper-slide:hover img {
+    opacity: 0.8;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     color: #fff;
@@ -54,6 +84,11 @@
   .main-slider .swiper-button-next,
   .main-slider .swiper-button-prev {
     color: #fff;
+  }
+
+  .thumb-slider .swiper-button-next,
+  .thumb-slider .swiper-button-prev {
+    color: #333;
   }
 </style>
 
@@ -65,7 +100,7 @@
   <div class="swiper main-slider">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        {% if block.settings.main_carousel_image != blank %}
+        {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
           <div class="swiper-slide">
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
@@ -85,6 +120,32 @@
 
     <div class="swiper-button-prev main-prev"></div>
     <div class="swiper-button-next main-next"></div>
+  </div>
+
+  {% if section.settings.child_carousel_title != blank %}
+    <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
+  {% endif %}
+
+  <div class="swiper thumb-slider">
+    <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
+              style="width: min-content"
+            {% endif %}>
+      {% for block in section.blocks %}
+        {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
+          <div class="swiper-slide">
+            <img
+              src="{{ block.settings.child_carousel_image | img_url: "master" }}"
+              alt="Child Carousel Image"
+              width="auto"
+              height="auto"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="swiper-button-prev thumb-prev"></div>
+    <div class="swiper-button-next thumb-next"></div>
   </div>
 </section>
 
@@ -205,6 +266,45 @@
     },
     {
       "type": "header",
+      "content": "Child Carousel Setting"
+    },
+    {
+      "type": "text",
+      "id": "child_carousel_title",
+      "label": "Child Carousel Title"
+    },
+    {
+      "type": "range",
+      "id": "child_carousel_top_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Child Carousel Top Border",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "child_carousel_bottom_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Child Carousel Bottom Border",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "thumb_carousel_image_gaps",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Thumb Carousel Image gaps",
+      "default": 10
+    },
+    {
+      "type": "header",
       "content": "Carousel Slide Setting"
     },
     {
@@ -224,6 +324,17 @@
       "default": 1000,
       "visible_if": "{{ section.settings.auto_slide == true }}"
     },
+    {
+      "type": "range",
+      "id": "auto_thumb_slide_speed",
+      "min": 0,
+      "max": 8000,
+      "step": 1000,
+      "unit": "s",
+      "label": "Auto Thumb Slide Speed",
+      "default": 1000,
+      "visible_if": "{{ section.settings.auto_slide == true }}"
+    }
   ],
   "blocks": [
     {
@@ -244,6 +355,11 @@
           "type": "richtext",
           "id": "main_carousel_text",
           "label": "Main Carousel_text"
+        },
+        {
+          "type": "image_picker",
+          "id": "child_carousel_image",
+          "label": "Child Carousel Image"
         }
       ]
     }
