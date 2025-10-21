@@ -1,35 +1,33 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
-
-<!-- Custom Revolution Slider styling -->
-<style>
-.rev_slider_wrapper,.rev_slider{
-  width:auto!important;max-width:none!important;margin:0 auto!important;
-  display:flex!important;justify-content:center!important;overflow-x:auto!important;
-  scroll-behavior:smooth!important;scroll-snap-type:x mandatory;position:relative!important
-}
-.rev_slider .tp-revslider-mainul li{
-  position:relative!important;display:inline-flex!important;
-  justify-content:center!important;align-items:center!important;scroll-snap-align:center
-}
-.rev_slider .tp-revslider-mainul img{
-  width:auto!important;height:auto!important;max-width:none!important;
-  display:block!important;margin:0 0px!important; /* adjust spacing */
-}
-.rev_slider_wrapper::-webkit-scrollbar{display:none!important}
-.rev_slider_wrapper::before,.rev_slider_wrapper::after{
-  content:"";position:sticky;top:0;width:60px;height:100%;
-  pointer-events:none;z-index:5
-}
-.rev_slider_wrapper::before{
-  left:0;background:linear-gradient(to right,#fff,rgba(255,255,255,0))
-}
-.rev_slider_wrapper::after{
-  right:0;background:linear-gradient(to left,#fff,rgba(255,255,255,0))
-}
-</style>
-<!-- End Custom Revolution Slider styling -->
-
+  <!-- Custom Revolution Slider styling -->
+  <style>
+    .rev_slider_wrapper,.rev_slider{
+      width:auto!important;max-width:none!important;margin:0 auto!important;
+      display:flex!important;justify-content:center!important;overflow-x:auto!important;
+      scroll-behavior:smooth!important;scroll-snap-type:x mandatory;position:relative!important
+    }
+    .rev_slider .tp-revslider-mainul li{
+      position:relative!important;display:inline-flex!important;
+      justify-content:center!important;align-items:center!important;scroll-snap-align:center
+    }
+    .rev_slider .tp-revslider-mainul img{
+      width:auto!important;height:auto!important;max-width:none!important;
+      display:block!important;margin:0 0px!important; /* adjust spacing */
+    }
+    .rev_slider_wrapper::-webkit-scrollbar{display:none!important}
+    .rev_slider_wrapper::before,.rev_slider_wrapper::after{
+      content:"";position:sticky;top:0;width:60px;height:100%;
+      pointer-events:none;z-index:5
+    }
+    .rev_slider_wrapper::before{
+      left:0;background:linear-gradient(to right,#fff,rgba(255,255,255,0))
+    }
+    .rev_slider_wrapper::after{
+      right:0;background:linear-gradient(to left,#fff,rgba(255,255,255,0))
+    }
+  </style>
+  <!-- End Custom Revolution Slider styling -->
 
   <head>
     <meta charset="utf-8">
@@ -47,9 +45,7 @@
       >
     {%- endif -%}
 
-    {%- unless settings.type_header_font.system?
-      and settings.type_body_font.system?
-    -%}
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
@@ -74,6 +70,8 @@
       render 'meta-tags'
       render 'js-bridge'
     -%}
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="{{ 'utils.js' | asset_url }}" defer></script>
     <script
@@ -195,7 +193,8 @@
     {%- render 'css-bridge' -%}
 
     {{ 'base.bundle.css' | asset_url | stylesheet_tag }}
-  {% include 'add_header_assets' %}</head>
+    {% include 'add_header_assets' %}
+  </head>
 
   <body>
     {%- if settings.enable_sidebar -%}
@@ -211,7 +210,7 @@
             {%- sections 'header-group' -%}
             {%- if template == 'index' -%}
               <div id="heroGroupWrapper">
-                {%- sections 'hero-group' -%}                
+                {%- sections 'hero-group' -%}
               </div>
             {%- endif %}
             <main id="MainContent" role="main" tabindex="-1">
@@ -229,7 +228,7 @@
         {%- sections 'header-group' -%}
         {%- if template == 'index' -%}
           <div id="heroGroupWrapper">
-            {%- sections 'hero-group' -%}            
+            {%- sections 'hero-group' -%}
           </div>
         {%- endif %}
         <div id="mainGridWrapper" class="main-site-grid">
@@ -253,7 +252,7 @@
       {%- sections 'header-group' -%}
       {%- if template == 'index' -%}
         <div id="heroGroupWrapper">
-          {%- sections 'hero-group' -%}          
+          {%- sections 'hero-group' -%}
         </div>
       {%- endif %}
       <main
@@ -317,5 +316,6 @@
       src="{{ 'load-images.js' | asset_url }}"
       type="module"
     ></script>
-  {% include 'add_footer_assets' %}</body>
+    {% include 'add_footer_assets' %}
+  </body>
 </html>

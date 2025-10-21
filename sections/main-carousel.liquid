@@ -1,3 +1,102 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    /* padding: 40px; */
+    color: #fff;
+  }
+
+  .main-title {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+
+  .main-slider {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto 40px auto;
+    position: relative;
+  }
+
+  .main-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .description-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    z-index: 10;
+  }
+
+  .thumb-title {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 2px solid #aaa;
+  }
+
+  .thumb-slider {
+    /* width: 80%; */
+    /* height: 150px; */
+    margin: 0 auto 20px auto;
+    position: relative;
+  }
+
+  .thumb-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+  }
+
+  .thumb-slider .swiper-slide-thumb-active img {
+    opacity: 1;
+    border: 3px solid #fff;
+  }
+
+  .thumb-slider .swiper-slide:hover img {
+    opacity: 0.8;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .main-slider .swiper-button-next,
+  .main-slider .swiper-button-prev {
+    color: #fff;
+  }
+
+  .thumb-slider .swiper-button-next,
+  .thumb-slider .swiper-button-prev {
+    color: #333;
+  }
+</style>
+
 <section>
   {% if section.settings.main_carousel_title != blank %}
     <div class="thumb-title">{{ section.settings.main_carousel_title }}</div>
@@ -27,7 +126,99 @@
       </div>
     {% endif %}
   {% endfor %}
+
+  {% if section.settings.child_carousel_title != blank %}
+    <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
+  {% endif %}
+
+  {% for block in section.blocks %}
+    {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
+      <div class="swiper main-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
+              alt="Main Carousel Image"
+              height="auto"
+              width="auto"
+            >
+            {% if block.settings.main_carousel_text != blank %}
+              <div class="description-overlay">
+                {{ block.settings.main_carousel_text }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="swiper-button-prev main-prev"></div>
+        <div class="swiper-button-next main-next"></div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </section>
+
+<script>
+  // Thumbnail Swiper
+  var thumbSwiper = new Swiper('.thumb-slider', {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    loop: true,
+    navigation: {
+      nextEl: '.thumb-next',
+      prevEl: '.thumb-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 15,
+      },
+    },
+  });
+
+  // Main Swiper
+  var mainSwiper = new Swiper('.main-slider', {
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.main-next',
+      prevEl: '.main-prev',
+    },
+    thumbs: {
+      swiper: thumbSwiper,
+    },
+    autoplay: {
+      delay: 3000, // slide every 3 seconds
+      disableOnInteraction: false, // keep autoplay running after user interaction
+    },
+    speed: 800, // smooth slide transition
+  });
+
+  // Optional: autoplay the thumbnail slider too (to stay in sync)
+  thumbSwiper.params.autoplay = {
+    delay: 3000,
+    disableOnInteraction: false,
+  };
+  thumbSwiper.autoplay.start();
+
+  // Optional: pause autoplay when hovering main slider
+  const mainEl = document.querySelector('.main-slider');
+  mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
+  mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
+</script>
 
 {% schema %}
 {
@@ -73,6 +264,10 @@
       "type": "text",
       "id": "child_carousel_title",
       "label": "Child Carousel Title"
+    },
+    {
+      "type": "header",
+      "content": "Carousel Slide Setting"
     },
     {
       "type": "checkbox",
