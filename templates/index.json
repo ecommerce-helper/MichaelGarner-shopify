@@ -170,9 +170,10 @@
         "main_carousel_bottom_border": 20,
         "child_carousel_title": "trace kits",
         "child_carousel_top_border": 20,
-        "child_carousel_bottom_border": 100,
-        "auto_slide": true,
-        "auto_slide_speed": 1000
+        "child_carousel_bottom_border": 20,
+        "auto_slide": false,
+        "auto_main_slide_speed": 1000,
+        "auto_thumb_slide_speed": 1000
       }
     },
     "collage_TFL3B4": {
