@@ -68,6 +68,50 @@
         "space_below": 0.5
       }
     },
+    "custom_thumb_carousel_JPgMt9": {
+      "type": "custom-thumb-carousel",
+      "blocks": {
+        "thumb_image_MBp3p4": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Bounce-DRAFT-1003-Line-3.png"
+          }
+        },
+        "thumb_image_B6awbg": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16_f61e6756-2a8e-4ade-86fc-202a57a8c1d3.png"
+          }
+        },
+        "thumb_image_aDrPpF": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
+          }
+        },
+        "thumb_image_KByxTM": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
+          }
+        }
+      },
+      "block_order": [
+        "thumb_image_MBp3p4",
+        "thumb_image_B6awbg",
+        "thumb_image_aDrPpF",
+        "thumb_image_KByxTM"
+      ],
+      "name": "Custom Thumbnail Carousel",
+      "settings": {
+        "child_carousel_title": "",
+        "child_carousel_top_border": 10,
+        "child_carousel_bottom_border": 20,
+        "thumb_carousel_image_gaps": 10,
+        "auto_slide": true,
+        "auto_thumb_slide_speed": 3000
+      }
+    },
     "image_slideshow_k9XmiG": {
       "type": "image-slideshow",
       "blocks": {
@@ -502,6 +546,7 @@
     "video_JhP7nK",
     "custom_main_carousel_xqPpXA",
     "custom_liquid_z3mEEh",
+    "custom_thumb_carousel_JPgMt9",
     "image_slideshow_k9XmiG",
     "collage_TFL3B4",
     "featured_collection_67fmbD",
