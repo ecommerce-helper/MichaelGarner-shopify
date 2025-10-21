@@ -1,0 +1,116 @@
+<section>
+  {% for block in section.blocks %}
+    {% if block.settings.main_carousel_image != blank and block.settings.parent_carousel_image != blank %}
+      <div class="swiper main-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
+              alt="Main Carousel Image"
+              height="auto"
+              width="auto"
+            >
+            {% if block.settings.main_carousel_text != blank %}
+              <div class="description-overlay">
+                {{ block.settings.main_carousel_text }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="swiper-button-prev main-prev"></div>
+        <div class="swiper-button-next main-next"></div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_top_and_bottom_border",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_left_and_right_border",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_slide",
+      "label": "Auto Slide",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "auto_slide_speed",
+      "min": 0,
+      "max": 8000,
+      "step": 1000,
+      "unit": "s",
+      "label": "Auto Slide Speed",
+      "default": 1000
+    },
+  ],
+  "blocks": [
+    {
+      "name": "Main Image",
+      "type": "main_image",
+      "settings":[
+        {
+            "type": "header",
+            "content": "Corousel Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "main_carousel_image",
+            "label": "Main Crousel Image",
+        },
+        {
+            "type": "richtext",
+            "id": "main_carousel_text",
+            "label": "Main Carousel_text",
+        },
+        {
+            "type": "image_picker",
+            "id": "parent_carousel_image",
+            "label": "Parent Carousel Image"
+        },
+        {
+            "type": "richtext",
+            "id": "parent_carousel_text",
+            "label": "Parent Carousel Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Carousel Images",
+    }
+  ]
+}
+{% endschema %}
