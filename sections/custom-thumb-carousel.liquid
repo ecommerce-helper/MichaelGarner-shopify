@@ -7,7 +7,7 @@
 
   .thumb-title {
     width: 80%;
-    margin: 0 auto 20px auto;
+    margin: {{ section.settings.main_carousel_text_border }}px auto 20px auto;
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
@@ -55,7 +55,12 @@
   {% endif %}
 
   <div class="swiper thumb-slider">
-    <div class="swiper-wrapper" {% if section.blocks.size < 6 %} style="width: min-content" {% endif %}>
+    <div
+      class="swiper-wrapper"
+      {% if section.blocks.size < 6 %}
+        style="width: min-content"
+      {% endif %}
+    >
       {% for block in section.blocks %}
         {% if block.settings.child_carousel_image != blank %}
           <div class="swiper-slide">
@@ -133,6 +138,16 @@
       "type": "text",
       "id": "child_carousel_title",
       "label": "Thumbnail Carousel Title"
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_text_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Text Border",
+      "default": 10
     },
     {
       "type": "range",
