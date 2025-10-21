@@ -2,7 +2,6 @@
   body {
     font-family: Arial, sans-serif;
     background: #1a1a1a;
-    /* padding: 40px; */
     color: #fff;
   }
 
@@ -37,7 +36,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    {% comment %} background: rgba(0, 0, 0, 0.7); {% endcomment %}
     color: #fff;
     padding: 20px;
     font-size: 13px;
@@ -45,57 +43,10 @@
     z-index: 10;
   }
 
-  .thumb-title {
-    width: 80%;
-    margin: 0 auto 20px auto;
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    border-bottom: 2px solid #aaa;
-  }
-
-  .thumb-slider {
-    /* width: 80%; */
-    /* height: 150px; */
-    margin: {{ section.settings.child_carousel_top_border }}px auto {{ section.settings.child_carousel_bottom_border }}px auto;
-    position: relative;
-  }
-
-  .thumb-slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    opacity: 0.6;
-    border-radius: 4px;
-    transition: opacity 0.3s;
-  }
-
-  .thumb-slider .swiper-slide-thumb-active img {
-    opacity: 1;
-    border: 3px solid #fff;
-  }
-
-  .thumb-slider .swiper-slide:hover img {
-    opacity: 0.8;
-  }
-
   .swiper-button-next,
   .swiper-button-prev {
     color: #fff;
     font-weight: bold;
-  }
-
-  .main-slider .swiper-button-next,
-  .main-slider .swiper-button-prev {
-    color: #fff;
-  }
-
-  .thumb-slider .swiper-button-next,
-  .thumb-slider .swiper-button-prev {
-    color: #333;
   }
 </style>
 
@@ -107,7 +58,7 @@
   <div class="swiper main-slider">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
+        {% if block.settings.main_carousel_image != blank %}
           <div class="swiper-slide">
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
@@ -128,67 +79,10 @@
     <div class="swiper-button-prev main-prev"></div>
     <div class="swiper-button-next main-next"></div>
   </div>
-
-  {% if section.settings.child_carousel_title != blank %}
-    <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
-  {% endif %}
-
-  <div class="swiper thumb-slider">
-    <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
-              style="width: min-content"
-            {% endif %}>
-      {% for block in section.blocks %}
-        {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
-          <div class="swiper-slide">
-            <img
-              src="{{ block.settings.child_carousel_image | img_url: "master" }}"
-              alt="Child Carousel Image"
-              width="auto"
-              height="auto"
-            >
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="swiper-button-prev thumb-prev"></div>
-    <div class="swiper-button-next thumb-next"></div>
-  </div>
 </section>
 
 <script>
-  // Thumbnail Swiper
-  var thumbSwiper = new Swiper('.thumb-slider', {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
-    loop: true,
-    navigation: {
-      nextEl: '.thumb-next',
-      prevEl: '.thumb-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 3,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-    },
-  });
-
-  // Main Swiper
+  // Main Swiper Only
   var mainSwiper = new Swiper('.main-slider', {
     spaceBetween: 10,
     loop: true,
@@ -196,30 +90,16 @@
       nextEl: '.main-next',
       prevEl: '.main-prev',
     },
-    thumbs: {
-      swiper: thumbSwiper,
-    },
-
     {% if section.settings.auto_slide == true %}
     autoplay: {
       delay: {{ section.settings.auto_main_slide_speed }},
-      disableOnInteraction: false, // keep autoplay running after user interaction
+      disableOnInteraction: false,
     },
     {% endif %}
-    speed: 800, // smooth slide transition
+    speed: 800, // smooth transition
   });
 
-  // Optional: autoplay the thumbnail slider too (to stay in sync)
-  {% if section.settings.auto_slide == true %}
-    thumbSwiper.params.autoplay = {
-      delay: {{ section.settings.auto_thumb_slide_speed }} + 800,
-      disableOnInteraction: false,
-    };
-  thumbSwiper.autoplay.start();
-
-  {% endif %}
-
-  // Optional: pause autoplay when hovering main slider
+  // Optional: pause autoplay when hovering
   const mainEl = document.querySelector('.main-slider');
   mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
   mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
@@ -227,7 +107,7 @@
 
 {% schema %}
 {
-  "name": "Carousel",
+  "name": "Main Carousel Only",
   "disabled_on": {
     "groups": ["aside", "header", "footer", "custom.hero"]
   },
@@ -273,45 +153,6 @@
     },
     {
       "type": "header",
-      "content": "Child Carousel Setting"
-    },
-    {
-      "type": "text",
-      "id": "child_carousel_title",
-      "label": "Child Carousel Title"
-    },
-    {
-      "type": "range",
-      "id": "child_carousel_top_border",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Child Carousel Top Border",
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "child_carousel_bottom_border",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Child Carousel Bottom Border",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "thumb_carousel_image_gaps",
-      "min": 0,
-      "max": 40,
-      "step": 1,
-      "unit": "px",
-      "label": "Thumb Carousel Image gaps",
-      "default": 10
-    },
-    {
-      "type": "header",
       "content": "Carousel Slide Setting"
     },
     {
@@ -323,24 +164,12 @@
     {
       "type": "range",
       "id": "auto_main_slide_speed",
-      "min": 0,
+      "min": 1000,
       "max": 8000,
       "step": 1000,
-      "unit": "s",
-      "label": "Auto Main Slide Speed",
-      "default": 1000,
-      "visible_if": "{{ section.settings.auto_slide == true }}"
-    },
-    {
-      "type": "range",
-      "id": "auto_thumb_slide_speed",
-      "min": 0,
-      "max": 8000,
-      "step": 1000,
-      "unit": "s",
-      "label": "Auto Thumb Slide Speed",
-      "default": 1000,
-      "visible_if": "{{ section.settings.auto_slide == true }}"
+      "unit": "ms",
+      "label": "Auto Slide Speed",
+      "default": 3000
     }
   ],
   "blocks": [
@@ -350,23 +179,14 @@
       "limit": 10,
       "settings": [
         {
-          "type": "header",
-          "content": "Corousel Image"
-        },
-        {
           "type": "image_picker",
           "id": "main_carousel_image",
-          "label": "Main Crousel Image"
+          "label": "Main Carousel Image"
         },
         {
           "type": "richtext",
           "id": "main_carousel_text",
-          "label": "Main Carousel_text"
-        },
-        {
-          "type": "image_picker",
-          "id": "child_carousel_image",
-          "label": "Child Carousel Image"
+          "label": "Main Carousel Text"
         }
       ]
     }
