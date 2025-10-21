@@ -116,6 +116,7 @@
         },
         "main_image_jzeWyH": {
           "type": "main_image",
+          "disabled": true,
           "settings": {
             "main_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg",
             "main_carousel_text": "",
@@ -124,6 +125,7 @@
         },
         "main_image_wcr6rQ": {
           "type": "main_image",
+          "disabled": true,
           "settings": {
             "main_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg",
             "main_carousel_text": "",
@@ -132,6 +134,7 @@
         },
         "main_image_E7HXq8": {
           "type": "main_image",
+          "disabled": true,
           "settings": {
             "main_carousel_image": "shopify://shop_images/project6.jpg",
             "main_carousel_text": "",
@@ -140,6 +143,7 @@
         },
         "main_image_ffkziq": {
           "type": "main_image",
+          "disabled": true,
           "settings": {
             "main_carousel_image": "shopify://shop_images/Asteroids.jpg",
             "main_carousel_text": "",
