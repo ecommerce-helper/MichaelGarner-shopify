@@ -90,7 +90,7 @@
 
 <script>
     // Thumbnail Swiper
-  {% comment %} var thumbSwiper = new Swiper('.thumb-slider', {
+  var thumbSwiper = new Swiper('.thumb-slider', {
     spaceBetween: 10,
     slidesPerView: 5,
     freeMode: true,
@@ -118,7 +118,7 @@
         spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
       },
     },
-  }); {% endcomment %}
+  });
 
   // Main Swiper
   var mainSwiper = new Swiper('.main-slider', {
