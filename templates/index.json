@@ -29,14 +29,14 @@
           "type": "main_image",
           "settings": {
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
-            "main_carousel_text": ""
+            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           }
         },
         "main_image_NaAkan": {
           "type": "main_image",
           "settings": {
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
-            "main_carousel_text": ""
+            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           }
         },
         "main_image_8Hwd9k": {
@@ -60,20 +60,6 @@
         "main_carousel_bottom_border": 20,
         "auto_slide": false,
         "auto_main_slide_speed": 6000
-      }
-    },
-    "custom_liquid_z3mEEh": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "title": "",
-        "custom_liquid": "<center><a href=\"LINK TO WHERE YOU WANT IMAGE TO GO WHEN CLLICKED\"> <img src=\"https://cdn.shopify.com/s/files/1/0821/2548/8426/files/tq0sfld-kickstarter-logo-green.png?v=1698423343&width=960\" alt=\"PICTURE NAME\" style=\"width: 350px;\"> </a>",
-        "text_alignment": "text-center",
-        "liquid_only": false,
-        "show_top_border": false,
-        "color_scheme": "",
-        "space_above": 0.5,
-        "space_below": 0.5
       }
     },
     "custom_thumb_carousel_JPgMt9": {
@@ -140,6 +126,20 @@
         "thumb_carousel_image_gaps": 40,
         "auto_slide": false,
         "auto_thumb_slide_speed": 3000
+      }
+    },
+    "custom_liquid_z3mEEh": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "title": "",
+        "custom_liquid": "<center><a href=\"LINK TO WHERE YOU WANT IMAGE TO GO WHEN CLLICKED\"> <img src=\"https://cdn.shopify.com/s/files/1/0821/2548/8426/files/tq0sfld-kickstarter-logo-green.png?v=1698423343&width=960\" alt=\"PICTURE NAME\" style=\"width: 350px;\"> </a>",
+        "text_alignment": "text-center",
+        "liquid_only": false,
+        "show_top_border": false,
+        "color_scheme": "",
+        "space_above": 0.5,
+        "space_below": 0.5
       }
     },
     "image_slideshow_k9XmiG": {
