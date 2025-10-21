@@ -166,10 +166,10 @@
       "settings": {
         "main_carousel_title": "in action",
         "main_carousel_text_border": 40,
-        "main_carousel_top_border": 22,
-        "main_carousel_bottom_border": 48,
+        "main_carousel_top_border": 20,
+        "main_carousel_bottom_border": 20,
         "child_carousel_title": "trace kits",
-        "child_carousel_top_border": 100,
+        "child_carousel_top_border": 20,
         "child_carousel_bottom_border": 20,
         "auto_slide": true,
         "auto_slide_speed": 1000
