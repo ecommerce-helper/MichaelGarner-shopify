@@ -1,4 +1,8 @@
 <section>
+  {% if section.settings.main_carousel_title != blank %}
+    <div class="thumb-title">{{ section.settings.main_carousel_title }}</div>
+  {% endif %}
+
   {% for block in section.blocks %}
     {% if block.settings.main_carousel_image != blank and block.settings.parent_carousel_image != blank %}
       <div class="swiper main-slider">
@@ -29,22 +33,17 @@
 {
   "name": "Carousel",
   "disabled_on": {
-        "groups": [
-            "aside",
-            "header",
-            "footer",
-            "custom.hero"
-        ]
-    },
+    "groups": ["aside", "header", "footer", "custom.hero"]
+  },
   "settings": [
     {
-      "type": "text",
-      "id": "title",
-      "label": "Heading"
+      "type": "header",
+      "content": "Slider Setting"
     },
     {
-      "type": "header",
-      "content": "Layout"
+      "type": "text",
+      "id": "main_carousel_title",
+      "label": "Main Carousel Title"
     },
     {
       "type": "range",
@@ -53,7 +52,7 @@
       "max": 50,
       "step": 1,
       "unit": "px",
-      "label": "Font size",
+      "label": "Main Carousel Top and Bottom Border",
       "default": 10
     },
     {
@@ -63,7 +62,7 @@
       "max": 50,
       "step": 1,
       "unit": "px",
-      "label": "Font size",
+      "label": "Main Carousel Top and Bottom Border",
       "default": 20
     },
     {
@@ -81,43 +80,44 @@
       "unit": "s",
       "label": "Auto Slide Speed",
       "default": 1000
-    },
+    }
   ],
   "blocks": [
     {
       "name": "Main Image",
       "type": "main_image",
-      "settings":[
+      "limit": 10,
+      "settings": [
         {
-            "type": "header",
-            "content": "Corousel Image"
+          "type": "header",
+          "content": "Corousel Image"
         },
         {
-            "type": "image_picker",
-            "id": "main_carousel_image",
-            "label": "Main Crousel Image"
+          "type": "image_picker",
+          "id": "main_carousel_image",
+          "label": "Main Crousel Image"
         },
         {
-            "type": "richtext",
-            "id": "main_carousel_text",
-            "label": "Main Carousel_text"
+          "type": "richtext",
+          "id": "main_carousel_text",
+          "label": "Main Carousel_text"
         },
         {
-            "type": "image_picker",
-            "id": "parent_carousel_image",
-            "label": "Parent Carousel Image"
+          "type": "image_picker",
+          "id": "parent_carousel_image",
+          "label": "Parent Carousel Image"
         },
         {
-            "type": "richtext",
-            "id": "parent_carousel_text",
-            "label": "Parent Carousel Text"
+          "type": "richtext",
+          "id": "parent_carousel_text",
+          "label": "Parent Carousel Text"
         }
       ]
     }
   ],
   "presets": [
     {
-        "name": "Carousel Images",
+      "name": "Carousel Images"
     }
   ]
 }
