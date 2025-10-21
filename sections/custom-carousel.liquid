@@ -8,7 +8,7 @@
 
   .main-title {
     width: 80%;
-    margin: 0 auto 20px auto;
+    margin: {{ section.settings.main_carousel_text_border }}px auto 0px auto;
     font-weight: bold;
     font-size: 24px;
     text-transform: uppercase;
@@ -233,6 +233,16 @@
       "type": "text",
       "id": "main_carousel_title",
       "label": "Main Carousel Title"
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_text_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Main Carousel Text Border",
+      "default": 10
     },
     {
       "type": "range",
