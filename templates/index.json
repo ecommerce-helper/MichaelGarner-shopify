@@ -47,9 +47,9 @@
       "name": "Custom Main Carousel",
       "settings": {
         "main_carousel_title": "in action",
-        "main_carousel_text_border": 10,
-        "main_carousel_top_border": 10,
-        "main_carousel_bottom_border": 20,
+        "main_carousel_text_border": 42,
+        "main_carousel_top_border": 57,
+        "main_carousel_bottom_border": 87,
         "auto_slide": true,
         "auto_main_slide_speed": 1000
       }
