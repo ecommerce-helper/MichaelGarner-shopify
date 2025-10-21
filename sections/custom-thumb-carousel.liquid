@@ -107,12 +107,7 @@
         spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
       },
     },
-    {% if section.settings.auto_slide == true %}
-    autoplay: {
-      delay: {{ section.settings.auto_thumb_slide_speed }},
-      disableOnInteraction: false,
-    },
-    {% endif %}
+
     speed: 800, // smooth slide transition
   });
 
