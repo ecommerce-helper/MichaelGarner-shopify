@@ -91,6 +91,7 @@
       prevEl: '.main-prev',
     },
     {% if section.settings.auto_slide == 'true' %}
+      console.log("hello");
       autoplay: {
         delay: {{ section.settings.auto_main_slide_speed }},
         disableOnInteraction: false,
