@@ -106,12 +106,6 @@
             "child_carousel_image": "shopify://shop_images/hq1_fbcdffff-5a76-4533-9906-4e883405f514.jpg"
           }
         },
-        "main_image_GiyQiG": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_text": ""
-          }
-        },
         "main_image_fbbE4m": {
           "type": "main_image",
           "settings": {
@@ -163,7 +157,6 @@
       },
       "block_order": [
         "main_image_pbpdKp",
-        "main_image_GiyQiG",
         "main_image_fbbE4m",
         "main_image_jzeWyH",
         "main_image_wcr6rQ",
