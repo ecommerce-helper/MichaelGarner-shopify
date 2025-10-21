@@ -89,26 +89,30 @@
 </section>
 
 <script>
-      // Main Swiper
-  var mainSwiper = new Swiper('.main-slider', {
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-      nextEl: '.main-next',
-      prevEl: '.main-prev',
-    },
-    thumbs: {
-      swiper: thumbSwiper,
-    },
+        // Main Swiper
+    var mainSwiper = new Swiper('.main-slider', {
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: '.main-next',
+        prevEl: '.main-prev',
+      },
+      thumbs: {
+        swiper: thumbSwiper,
+      },
 
-    {% if section.settings.auto_slide == true %}
-    autoplay: {
-      delay: {{ section.settings.auto_main_slide_speed }},
-      disableOnInteraction: false, // keep autoplay running after user interaction
-    },
-    {% endif %}
-    speed: 800, // smooth slide transition
-  });
+      {% if section.settings.auto_slide == true %}
+      autoplay: {
+        delay: {{ section.settings.auto_main_slide_speed }},
+        disableOnInteraction: false, // keep autoplay running after user interaction
+      },
+      {% endif %}
+      speed: 800, // smooth slide transition
+    });
+
+  const mainEl = document.querySelector('.main-slider');
+    mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
+    mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
 </script>
 
 {% schema %}
@@ -177,7 +181,7 @@
       "label": "Auto Main Slide Speed",
       "default": 1000,
       "visible_if": "{{ section.settings.auto_slide == true }}"
-    },
+    }
   ],
   "blocks": [
     {

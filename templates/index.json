@@ -22,6 +22,53 @@
         "enable_full_bleed": true
       }
     },
+    "custom_main_carousel_QeWEg8": {
+      "type": "custom-main-carousel",
+      "blocks": {
+        "main_image_x9fWfY": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_kVNEQG": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_kxzMd4": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_p79pxY": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg",
+            "main_carousel_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_image_x9fWfY",
+        "main_image_kVNEQG",
+        "main_image_kxzMd4",
+        "main_image_p79pxY"
+      ],
+      "name": "Custom Main Image Carousel",
+      "settings": {
+        "main_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "main_carousel_top_border": 10,
+        "main_carousel_bottom_border": 20,
+        "auto_slide": true,
+        "auto_main_slide_speed": 1000
+      }
+    },
     "custom_liquid_z3mEEh": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -552,6 +599,7 @@
   },
   "order": [
     "video_JhP7nK",
+    "custom_main_carousel_QeWEg8",
     "custom_liquid_z3mEEh",
     "image_slideshow_k9XmiG",
     "custom_carousel_q4iURK",
