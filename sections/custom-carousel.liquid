@@ -186,8 +186,6 @@
     },
   });
 
-  console.log('hello world');
-
   // Main Swiper
   var mainSwiper = new Swiper('.main-slider', {
     spaceBetween: 10,
@@ -211,7 +209,7 @@
     delay: {{ section.settings.auto_thumb_slide_speed }},
     disableOnInteraction: false,
   };
-  thumbSwiper.autoplay.start();
+  {% comment %} thumbSwiper.autoplay.start(); {% endcomment %}
 
   // Optional: pause autoplay when hovering main slider
   const mainEl = document.querySelector('.main-slider');
