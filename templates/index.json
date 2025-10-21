@@ -71,6 +71,12 @@
     "custom_thumb_carousel_JPgMt9": {
       "type": "custom-thumb-carousel",
       "blocks": {
+        "thumb_image_ianYB4": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
+          }
+        },
         "thumb_image_MBp3p4": {
           "type": "thumb_image",
           "settings": {
@@ -109,6 +115,7 @@
         }
       },
       "block_order": [
+        "thumb_image_ianYB4",
         "thumb_image_MBp3p4",
         "thumb_image_B6awbg",
         "thumb_image_aDrPpF",
