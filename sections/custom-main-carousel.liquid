@@ -1,5 +1,5 @@
 <style>
-  body {
+  {% comment %} body {
     font-family: Arial, sans-serif;
     background: #1a1a1a;
     /* padding: 40px; */
@@ -54,15 +54,105 @@
   .main-slider .swiper-button-next,
   .main-slider .swiper-button-prev {
     color: #fff;
-  }
+  } {% endcomment %}
+
+  body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 </style>
 
 <section>
-  {% if section.settings.main_carousel_title != blank %}
-    <div class="main-title">{{ section.settings.main_carousel_title }}</div>
-  {% endif %}
+  {% comment %}
+    {% if section.settings.main_carousel_title != blank %}
+      <div class="main-title">{{ section.settings.main_carousel_title }}</div>
+    {% endif %}
 
-  <div class="swiper main-slider">
+    <div class="swiper main-slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
+            <div class="swiper-slide">
+              <img
+                src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
+                alt="Main Carousel Image"
+                height="auto"
+                width="auto"
+              >
+              {% if block.settings.main_carousel_text != blank %}
+                <div class="description-overlay">
+                  {{ block.settings.main_carousel_text }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="swiper-button-prev main-prev"></div>
+      <div class="swiper-button-next main-next"></div>
+    </div>
+
+    {% if section.settings.child_carousel_title != blank %}
+      <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
+    {% endif %}
+  {% endcomment %}
+
+  {% comment %}
+    <div class="swiper thumb-slider">
+      <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
+                style="width: min-content"
+              {% endif %}>
+        {% for block in section.blocks %}
+          {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
+            <div class="swiper-slide">
+              <img
+                src="{{ block.settings.child_carousel_image | img_url: "master" }}"
+                alt="Child Carousel Image"
+                width="auto"
+                height="auto"
+              >
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="swiper-button-prev thumb-prev"></div>
+      <div class="swiper-button-next thumb-next"></div>
+    </div>
+  {% endcomment %}
+
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
@@ -82,41 +172,14 @@
         {% endif %}
       {% endfor %}
     </div>
-
-    <div class="swiper-button-prev main-prev"></div>
-    <div class="swiper-button-next main-next"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-
-  {% if section.settings.child_carousel_title != blank %}
-    <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
-  {% endif %}
-
-  {% comment %} <div class="swiper thumb-slider">
-    <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
-              style="width: min-content"
-            {% endif %}>
-      {% for block in section.blocks %}
-        {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
-          <div class="swiper-slide">
-            <img
-              src="{{ block.settings.child_carousel_image | img_url: "master" }}"
-              alt="Child Carousel Image"
-              width="auto"
-              height="auto"
-            >
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="swiper-button-prev thumb-prev"></div>
-    <div class="swiper-button-next thumb-next"></div>
-  </div> {% endcomment %}
 </section>
 
 <script>
   // Thumbnail Swiper
-  var thumbSwiper = new Swiper('.thumb-slider', {
+  {% comment %} var thumbSwiper = new Swiper('.thumb-slider', {
     spaceBetween: 10,
     slidesPerView: 5,
     freeMode: true,
@@ -180,7 +243,25 @@
   // Optional: pause autoplay when hovering main slider
   const mainEl = document.querySelector('.main-slider');
   mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
-  mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
+  mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start()); {% endcomment %}
+
+   var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 </script>
 
 {% schema %}
