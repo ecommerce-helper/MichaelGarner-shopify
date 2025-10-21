@@ -58,8 +58,8 @@
         "main_carousel_text_border": 20,
         "main_carousel_top_border": 10,
         "main_carousel_bottom_border": 20,
-        "auto_slide": false,
-        "auto_main_slide_speed": 8000
+        "auto_slide": true,
+        "auto_main_slide_speed": 1000
       }
     },
     "custom_liquid_z3mEEh": {
