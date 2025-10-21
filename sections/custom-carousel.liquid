@@ -200,7 +200,7 @@
       swiper: thumbSwiper,
     },
     autoplay: {
-      delay: 8000, // slide every 3 seconds
+      delay: 8000, 
       disableOnInteraction: false, // keep autoplay running after user interaction
     },
     speed: 800, // smooth slide transition
@@ -312,7 +312,8 @@
       "step": 1000,
       "unit": "s",
       "label": "Auto Slide Speed",
-      "default": 1000
+      "default": 1000,
+      "visible_if": "{{ section.settings.auto_slide == true }}"
     }
   ],
   "blocks": [
@@ -347,6 +348,6 @@
     {
       "name": "Custom Images Carousel"
     }
-  ]
+  ],
 }
 {% endschema %}
