@@ -1,0 +1,103 @@
+{% schema %}
+{
+  "name": "Thumb Carousel",
+  "disabled_on": {
+    "groups": ["aside", "header", "footer", "custom.hero"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Thumb Carousel Setting"
+    },
+    {
+      "type": "text",
+      "id": "child_carousel_title",
+      "label": "Thumb Carousel Title"
+    },
+    {
+      "type": "range",
+      "id": "child_carousel_top_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Thumb Carousel Top Border",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "child_carousel_bottom_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Thumb Carousel Bottom Border",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "thumb_carousel_image_gaps",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Thumb Carousel Image gaps",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Carousel Slide Setting"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_slide",
+      "label": "Auto Slide",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "auto_thumb_slide_speed",
+      "min": 0,
+      "max": 8000,
+      "step": 1000,
+      "unit": "s",
+      "label": "Auto Thumb Slide Speed",
+      "default": 1000,
+      "visible_if": "{{ section.settings.auto_slide == true }}"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Main Image",
+      "type": "main_image",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Corousel Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_carousel_image",
+          "label": "Main Crousel Image"
+        },
+        {
+          "type": "richtext",
+          "id": "main_carousel_text",
+          "label": "Main Carousel_text"
+        },
+        {
+          "type": "image_picker",
+          "id": "child_carousel_image",
+          "label": "Child Carousel Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Thumb Images Carousel"
+    }
+  ]
+}
+{% endschema %}
