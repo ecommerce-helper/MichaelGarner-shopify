@@ -200,7 +200,7 @@
       swiper: thumbSwiper,
     },
     autoplay: {
-      delay: 3000,
+      delay: {{ section.settings.auto_main_slide_speed }},
       disableOnInteraction: false, // keep autoplay running after user interaction
     },
     speed: 800, // smooth slide transition
@@ -208,7 +208,7 @@
 
   // Optional: autoplay the thumbnail slider too (to stay in sync)
   thumbSwiper.params.autoplay = {
-    delay: 3000,
+    delay: {{ section.settings.auto_thumb_slide_speed }},
     disableOnInteraction: false,
   };
   thumbSwiper.autoplay.start();
