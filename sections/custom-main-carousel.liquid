@@ -90,12 +90,12 @@
       nextEl: '.main-next',
       prevEl: '.main-prev',
     },
- {% comment %} {% if section.settings.auto_slide == 'true' %} {% endcomment %}
+    {% if section.settings.auto_slide == 'true' %} 
       autoplay: {
         delay: {{ section.settings.auto_main_slide_speed }},
         disableOnInteraction: false,
       },
-    {% comment %} {% endif %}  {% endcomment %}
+    {% endif %} 
     speed: 800, // smooth transition
   });
 
