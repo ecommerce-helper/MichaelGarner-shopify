@@ -22,46 +22,6 @@
         "enable_full_bleed": true
       }
     },
-    "custom_main_carousel_QeWEg8": {
-      "type": "custom-main-carousel",
-      "blocks": {
-        "main_image_i9ceHy": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_WLXCgM": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_kVNEQG": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
-            "main_carousel_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "main_image_i9ceHy",
-        "main_image_WLXCgM",
-        "main_image_kVNEQG"
-      ],
-      "name": "Custom Main Image Carousel",
-      "settings": {
-        "main_carousel_title": "in action",
-        "main_carousel_text_border": 10,
-        "main_carousel_top_border": 10,
-        "main_carousel_bottom_border": 20,
-        "auto_slide": true,
-        "auto_main_slide_speed": 5000
-      }
-    },
     "custom_liquid_z3mEEh": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -133,6 +93,45 @@
         "auto_rotate": false,
         "change_slides_speed": 5,
         "color_scheme": ""
+      }
+    },
+    "custom_main_carousel_p4UHQp": {
+      "type": "custom-main-carousel",
+      "blocks": {
+        "main_image_NjGUYt": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
+            "main_carousel_text": "",
+            "child_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg"
+          }
+        },
+        "main_image_Qpaazx": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/project7.jpg",
+            "main_carousel_text": "",
+            "child_carousel_image": "shopify://shop_images/hq3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "main_image_NjGUYt",
+        "main_image_Qpaazx"
+      ],
+      "name": "Custom Images Carousel",
+      "settings": {
+        "main_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "main_carousel_top_border": 10,
+        "main_carousel_bottom_border": 20,
+        "child_carousel_title": "",
+        "child_carousel_top_border": 10,
+        "child_carousel_bottom_border": 20,
+        "thumb_carousel_image_gaps": 10,
+        "auto_slide": true,
+        "auto_main_slide_speed": 1000,
+        "auto_thumb_slide_speed": 1000
       }
     },
     "collage_TFL3B4": {
@@ -508,9 +507,9 @@
   },
   "order": [
     "video_JhP7nK",
-    "custom_main_carousel_QeWEg8",
     "custom_liquid_z3mEEh",
     "image_slideshow_k9XmiG",
+    "custom_main_carousel_p4UHQp",
     "collage_TFL3B4",
     "featured_collection_67fmbD",
     "featured_collection_mRqRCQ",
