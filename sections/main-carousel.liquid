@@ -28,6 +28,14 @@
 {% schema %}
 {
   "name": "Carousel",
+  "disabled_on": {
+        "groups": [
+            "aside",
+            "header",
+            "footer",
+            "custom.hero"
+        ]
+    },
   "settings": [
     {
       "type": "text",
@@ -92,7 +100,7 @@
         {
             "type": "richtext",
             "id": "main_carousel_text",
-            "label": "Main Carousel_text",
+            "label": "Main Carousel_text"
         },
         {
             "type": "image_picker",
