@@ -103,8 +103,7 @@
           "settings": {
             "main_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg",
             "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg",
-            "child_carousel_text": ""
+            "child_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg"
           }
         },
         "main_image_jzeWyH": {
@@ -112,8 +111,7 @@
           "settings": {
             "main_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg",
             "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg",
-            "child_carousel_text": ""
+            "child_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg"
           }
         },
         "main_image_wcr6rQ": {
@@ -121,8 +119,7 @@
           "settings": {
             "main_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg",
             "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg",
-            "child_carousel_text": ""
+            "child_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg"
           }
         },
         "main_image_E7HXq8": {
@@ -130,8 +127,7 @@
           "settings": {
             "main_carousel_image": "shopify://shop_images/project6.jpg",
             "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/project6.jpg",
-            "child_carousel_text": ""
+            "child_carousel_image": "shopify://shop_images/project6.jpg"
           }
         },
         "main_image_ffkziq": {
@@ -139,8 +135,7 @@
           "settings": {
             "main_carousel_image": "shopify://shop_images/Asteroids.jpg",
             "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/Asteroids.jpg",
-            "child_carousel_text": ""
+            "child_carousel_image": "shopify://shop_images/Asteroids.jpg"
           }
         },
         "main_image_AVaiXe": {
@@ -148,8 +143,7 @@
           "settings": {
             "main_carousel_image": "shopify://shop_images/hq3.jpg",
             "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/hq3.jpg",
-            "child_carousel_text": ""
+            "child_carousel_image": "shopify://shop_images/hq3.jpg"
           }
         }
       },
@@ -164,8 +158,10 @@
       "name": "Custom Images Carousel",
       "settings": {
         "main_carousel_title": "",
-        "main_carousel_top_and_bottom_border": 10,
-        "main_carousel_left_and_right_border": 20,
+        "main_carousel_top_border": 52,
+        "main_carousel_bottom_border": 20,
+        "main_carousel_left_border": 20,
+        "main_carousel_right_border": 20,
         "child_carousel_title": "",
         "auto_slide": true,
         "auto_slide_speed": 1000
