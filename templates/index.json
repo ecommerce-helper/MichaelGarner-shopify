@@ -101,6 +101,14 @@
         "main_image_pbpdKp": {
           "type": "main_image",
           "settings": {
+            "main_carousel_image": "shopify://shop_images/hq1_fbcdffff-5a76-4533-9906-4e883405f514.jpg",
+            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "child_carousel_image": "shopify://shop_images/hq1_fbcdffff-5a76-4533-9906-4e883405f514.jpg"
+          }
+        },
+        "main_image_GiyQiG": {
+          "type": "main_image",
+          "settings": {
             "main_carousel_text": ""
           }
         },
@@ -155,6 +163,7 @@
       },
       "block_order": [
         "main_image_pbpdKp",
+        "main_image_GiyQiG",
         "main_image_fbbE4m",
         "main_image_jzeWyH",
         "main_image_wcr6rQ",
