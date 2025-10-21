@@ -19,7 +19,10 @@
   .main-slider {
     width: 80%;
     height: 400px;
-    margin: 0 auto 40px auto;
+    margin-top: {{ section.settings.main_carousel_top_border }};
+    margin-bottom: {{ section.settings.main_carousel_bottom_border }};
+    margin-left: {{ section.settings.main_carousel_left_border }};
+    margin-right: {{ section.settings.main_carousel_right_border }};
     position: relative;
   }
 
@@ -235,22 +238,42 @@
     },
     {
       "type": "range",
-      "id": "main_carousel_top_and_bottom_border",
+      "id": "main_carousel_top_border",
       "min": 0,
-      "max": 50,
+      "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Main Carousel Top and Bottom Border",
+      "label": "Main Carousel Top Border",
       "default": 10
     },
     {
       "type": "range",
-      "id": "main_carousel_left_and_right_border",
+      "id": "main_carousel_bottom_border",
       "min": 0,
-      "max": 50,
+      "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Main Carousel Top and Bottom Border",
+      "label": "Main Carousel Bottom Border",
+      "default": 20
+    },
+        {
+      "type": "range",
+      "id": "main_carousel_left_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Main Carousel Left Border",
+      "default": 20
+    },
+        {
+      "type": "range",
+      "id": "main_carousel_right_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Main Carousel Right Border",
       "default": 20
     },
     {
