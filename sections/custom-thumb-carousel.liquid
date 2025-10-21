@@ -107,11 +107,14 @@
         spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
       },
     },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    speed: 800, // smooth slide transition
+    {{ section.settings.auto_slide }}
+    {% if section.settings.auto_slide == true %}
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800, // smooth slide transition
+    {% endif %}
   });
 
   // Optional: pause autoplay when hovering
