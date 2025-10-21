@@ -1,18 +1,138 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .thumb-title {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 2px solid #aaa;
+  }
+
+  .thumb-slider {
+    width: 80%;
+    height: 150px;
+    margin: {{ section.settings.child_carousel_top_border }}px auto {{ section.settings.child_carousel_bottom_border }}px auto;
+    position: relative;
+  }
+
+  .thumb-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 4px;
+    transition: opacity 0.3s, border 0.3s;
+  }
+
+  .thumb-slider .swiper-slide-thumb-active img {
+    opacity: 1;
+    border: 3px solid #fff;
+  }
+
+  .thumb-slider .swiper-slide:hover img {
+    opacity: 0.8;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    font-weight: bold;
+  }
+</style>
+
+<section>
+  {% if section.settings.child_carousel_title != blank %}
+    <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
+  {% endif %}
+
+  <div class="swiper thumb-slider">
+    <div class="swiper-wrapper" {% if section.blocks.size < 6 %} style="width: min-content" {% endif %}>
+      {% for block in section.blocks %}
+        {% if block.settings.child_carousel_image != blank %}
+          <div class="swiper-slide">
+            <img
+              src="{{ block.settings.child_carousel_image | img_url: 'master' }}"
+              alt="Thumbnail Carousel Image"
+              width="auto"
+              height="auto"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="swiper-button-prev thumb-prev"></div>
+    <div class="swiper-button-next thumb-next"></div>
+  </div>
+</section>
+
+<script>
+  // Thumbnail Carousel Only
+  var thumbSwiper = new Swiper('.thumb-slider', {
+    spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
+    slidesPerView: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.thumb-next',
+      prevEl: '.thumb-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
+      },
+      768: {
+        slidesPerView: 5,
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
+      },
+    },
+    {% if section.settings.auto_slide == true %}
+    autoplay: {
+      delay: {{ section.settings.auto_thumb_slide_speed }},
+      disableOnInteraction: false,
+    },
+    {% endif %}
+    speed: 800, // smooth slide transition
+  });
+
+  // Optional: pause autoplay when hovering
+  const thumbEl = document.querySelector('.thumb-slider');
+  thumbEl.addEventListener('mouseenter', () => thumbSwiper.autoplay.stop());
+  thumbEl.addEventListener('mouseleave', () => thumbSwiper.autoplay.start());
+</script>
+
 {% schema %}
 {
-  "name": "Thumb Carousel",
+  "name": "Thumbnail Carousel Only",
   "disabled_on": {
     "groups": ["aside", "header", "footer", "custom.hero"]
   },
   "settings": [
     {
       "type": "header",
-      "content": "Thumb Carousel Setting"
+      "content": "Thumbnail Carousel Setting"
     },
     {
       "type": "text",
       "id": "child_carousel_title",
-      "label": "Thumb Carousel Title"
+      "label": "Thumbnail Carousel Title"
     },
     {
       "type": "range",
@@ -21,7 +141,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Thumb Carousel Top Border",
+      "label": "Thumbnail Carousel Top Border",
       "default": 10
     },
     {
@@ -31,7 +151,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Thumb Carousel Bottom Border",
+      "label": "Thumbnail Carousel Bottom Border",
       "default": 20
     },
     {
@@ -41,12 +161,12 @@
       "max": 40,
       "step": 1,
       "unit": "px",
-      "label": "Thumb Carousel Image gaps",
+      "label": "Image Gap Between Slides",
       "default": 10
     },
     {
       "type": "header",
-      "content": "Carousel Slide Setting"
+      "content": "Carousel Auto Slide Setting"
     },
     {
       "type": "checkbox",
@@ -57,46 +177,31 @@
     {
       "type": "range",
       "id": "auto_thumb_slide_speed",
-      "min": 0,
+      "min": 1000,
       "max": 8000,
       "step": 1000,
-      "unit": "s",
-      "label": "Auto Thumb Slide Speed",
-      "default": 1000,
-      "visible_if": "{{ section.settings.auto_slide == true }}"
+      "unit": "ms",
+      "label": "Auto Slide Speed",
+      "default": 3000
     }
   ],
   "blocks": [
     {
-      "name": "Main Image",
-      "type": "main_image",
+      "name": "Thumbnail Image",
+      "type": "thumb_image",
       "limit": 10,
       "settings": [
         {
-          "type": "header",
-          "content": "Corousel Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "main_carousel_image",
-          "label": "Main Crousel Image"
-        },
-        {
-          "type": "richtext",
-          "id": "main_carousel_text",
-          "label": "Main Carousel_text"
-        },
-        {
           "type": "image_picker",
           "id": "child_carousel_image",
-          "label": "Child Carousel Image"
+          "label": "Thumbnail Carousel Image"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Custom Thumb Images Carousel"
+      "name": "Custom Thumbnail Carousel"
     }
   ]
 }
