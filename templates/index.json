@@ -128,7 +128,7 @@
         "child_carousel_title": "",
         "child_carousel_top_border": 10,
         "child_carousel_bottom_border": 20,
-        "thumb_carousel_image_gaps": 10,
+        "thumb_carousel_image_gaps": 40,
         "auto_slide": true,
         "auto_thumb_slide_speed": 3000
       }
