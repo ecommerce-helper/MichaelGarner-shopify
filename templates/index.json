@@ -22,6 +22,38 @@
         "enable_full_bleed": true
       }
     },
+    "custom_main_carousel_xqPpXA": {
+      "type": "custom-main-carousel",
+      "blocks": {
+        "main_image_MeD7LL": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_NaAkan": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
+            "main_carousel_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_image_MeD7LL",
+        "main_image_NaAkan"
+      ],
+      "name": "Custom Main Carousel",
+      "settings": {
+        "main_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "main_carousel_top_border": 10,
+        "main_carousel_bottom_border": 20,
+        "auto_slide": true,
+        "auto_main_slide_speed": 3000
+      }
+    },
     "custom_liquid_z3mEEh": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -468,6 +500,7 @@
   },
   "order": [
     "video_JhP7nK",
+    "custom_main_carousel_xqPpXA",
     "custom_liquid_z3mEEh",
     "image_slideshow_k9XmiG",
     "collage_TFL3B4",
