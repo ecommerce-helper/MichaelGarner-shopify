@@ -46,7 +46,7 @@
       ],
       "name": "Custom Main Carousel",
       "settings": {
-        "main_carousel_title": "",
+        "main_carousel_title": "in action",
         "main_carousel_text_border": 10,
         "main_carousel_top_border": 10,
         "main_carousel_bottom_border": 20,
