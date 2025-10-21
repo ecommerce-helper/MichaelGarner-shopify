@@ -169,19 +169,18 @@
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 10,
-      },
+        spaceBetween: 1{{ section.settings.thumb_carousel_image_gaps }},
       640: {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
       },
       768: {
-        slidesPerView: 4,
-        spaceBetween: 15,
+        slidesPerView: 6,
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }}
       },
       1024: {
         slidesPerView: 5,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
+        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }}
       },
     },
   });
