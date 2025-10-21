@@ -173,7 +173,7 @@
         "child_carousel_title": "trace kits",
         "child_carousel_top_border": 20,
         "child_carousel_bottom_border": 20,
-        "thumb_carousel_image_gaps": 40,
+        "thumb_carousel_image_gaps": 10,
         "auto_slide": true,
         "auto_main_slide_speed": 4000,
         "auto_thumb_slide_speed": 4000
