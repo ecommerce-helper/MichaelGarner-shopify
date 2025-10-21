@@ -25,6 +25,13 @@
     "custom_main_carousel_QeWEg8": {
       "type": "custom-main-carousel",
       "blocks": {
+        "main_image_i9ceHy": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
+            "main_carousel_text": ""
+          }
+        },
         "main_image_WLXCgM": {
           "type": "main_image",
           "settings": {
@@ -41,6 +48,7 @@
         }
       },
       "block_order": [
+        "main_image_i9ceHy",
         "main_image_WLXCgM",
         "main_image_kVNEQG"
       ],
