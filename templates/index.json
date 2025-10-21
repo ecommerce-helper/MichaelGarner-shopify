@@ -135,90 +135,6 @@
         "color_scheme": ""
       }
     },
-    "custom_carousel_q4iURK": {
-      "type": "custom-carousel",
-      "blocks": {
-        "main_image_pbpdKp": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/hq1_fbcdffff-5a76-4533-9906-4e883405f514.jpg",
-            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-            "child_carousel_image": "shopify://shop_images/hq1_fbcdffff-5a76-4533-9906-4e883405f514.jpg"
-          }
-        },
-        "main_image_fbbE4m": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg",
-            "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg"
-          }
-        },
-        "main_image_jzeWyH": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg",
-            "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg"
-          }
-        },
-        "main_image_wcr6rQ": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg",
-            "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/imgi_205_fulfillment.jpg"
-          }
-        },
-        "main_image_E7HXq8": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/project6.jpg",
-            "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/project6.jpg"
-          }
-        },
-        "main_image_ffkziq": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Asteroids.jpg",
-            "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/Asteroids.jpg"
-          }
-        },
-        "main_image_AVaiXe": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/hq3.jpg",
-            "main_carousel_text": "",
-            "child_carousel_image": "shopify://shop_images/hq3.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "main_image_pbpdKp",
-        "main_image_fbbE4m",
-        "main_image_jzeWyH",
-        "main_image_wcr6rQ",
-        "main_image_E7HXq8",
-        "main_image_ffkziq",
-        "main_image_AVaiXe"
-      ],
-      "name": "Custom Images Carousel",
-      "settings": {
-        "main_carousel_title": "in action",
-        "main_carousel_text_border": 40,
-        "main_carousel_top_border": 20,
-        "main_carousel_bottom_border": 20,
-        "child_carousel_title": "trace kits",
-        "child_carousel_top_border": 20,
-        "child_carousel_bottom_border": 20,
-        "thumb_carousel_image_gaps": 10,
-        "auto_slide": true,
-        "auto_main_slide_speed": 4000,
-        "auto_thumb_slide_speed": 4000
-      }
-    },
     "collage_TFL3B4": {
       "type": "collage",
       "blocks": {
@@ -595,7 +511,6 @@
     "custom_main_carousel_QeWEg8",
     "custom_liquid_z3mEEh",
     "image_slideshow_k9XmiG",
-    "custom_carousel_q4iURK",
     "collage_TFL3B4",
     "featured_collection_67fmbD",
     "featured_collection_mRqRCQ",
