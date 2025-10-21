@@ -50,7 +50,7 @@
         "main_carousel_text_border": 10,
         "main_carousel_top_border": 10,
         "main_carousel_bottom_border": 20,
-        "auto_slide": false,
+        "auto_slide": true,
         "auto_main_slide_speed": 3000
       }
     },
