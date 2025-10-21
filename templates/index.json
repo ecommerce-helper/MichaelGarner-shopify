@@ -61,12 +61,12 @@
       ],
       "name": "Custom Main Image Carousel",
       "settings": {
-        "main_carousel_title": "",
+        "main_carousel_title": "in action",
         "main_carousel_text_border": 10,
         "main_carousel_top_border": 10,
         "main_carousel_bottom_border": 20,
         "auto_slide": true,
-        "auto_main_slide_speed": 1000
+        "auto_main_slide_speed": 5000
       }
     },
     "custom_liquid_z3mEEh": {
