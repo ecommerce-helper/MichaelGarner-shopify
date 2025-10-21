@@ -210,14 +210,14 @@
   });
 
   // Optional: autoplay the thumbnail slider too (to stay in sync)
-  {% if section.settings.auto_slide == true %}
+  {% comment %} {% if section.settings.auto_slide == true %}
     thumbSwiper.params.autoplay = {
       delay: {{ section.settings.auto_thumb_slide_speed }} + 800,
       disableOnInteraction: false,
     };
   thumbSwiper.autoplay.start();
 
-  {% endif %}
+  {% endif %} {% endcomment %}
 
   // Optional: pause autoplay when hovering main slider
   const mainEl = document.querySelector('.main-slider');
