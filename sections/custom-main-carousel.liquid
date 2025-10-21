@@ -65,7 +65,7 @@
   <div class="swiper main-slider">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
+        {% if block.settings.main_carousel_image != blank %}
           <div class="swiper-slide">
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
