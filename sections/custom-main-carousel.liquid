@@ -18,8 +18,10 @@
   }
 
   .main-slider {
-    width: 80%;
-    height: 400px;
+    max-width: 900px;
+    max-height: 700px;
+    {% comment %} width: 80%; {% endcomment %}
+    {% comment %} height: 400px; {% endcomment %}
     margin-top: {{ section.settings.main_carousel_top_border }}px;
     margin-bottom: {{ section.settings.main_carousel_bottom_border }}px;
     position: relative;
