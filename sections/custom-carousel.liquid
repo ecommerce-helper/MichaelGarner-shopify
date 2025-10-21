@@ -59,7 +59,7 @@
   .thumb-slider {
     /* width: 80%; */
     /* height: 150px; */
-    margin: 0 auto 20px auto;
+    margin: {{ section.settings.child_carousel_top_border }}px auto {{ section.settings.child_carousel_bottom_border }}px auto;
     position: relative;
   }
 
@@ -273,6 +273,26 @@
       "type": "text",
       "id": "child_carousel_title",
       "label": "Child Carousel Title"
+    },
+    {
+      "type": "range",
+      "id": "child_carousel_top_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Child Carousel Top Border",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "child_carousel_bottom_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Child Carousel Bottom Border",
+      "default": 20
     },
     {
       "type": "header",
