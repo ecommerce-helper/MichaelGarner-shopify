@@ -25,9 +25,10 @@
     "custom_main_carousel_QeWEg8": {
       "type": "custom-main-carousel",
       "blocks": {
-        "main_image_x9fWfY": {
+        "main_image_WLXCgM": {
           "type": "main_image",
           "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
             "main_carousel_text": ""
           }
         },
@@ -37,27 +38,11 @@
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
             "main_carousel_text": ""
           }
-        },
-        "main_image_kxzMd4": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/imgi_253_shopify-reviews-logo.jpg",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_p79pxY": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/imgi_231_tokio-japan-june-05-2022-shopify-web-page-displayed-modern-laptop-smartphone-notebook-red-background-shopify-logo-iphone_132310-8584_3ac09428-6e95-463f-89e5-751c3ae7b723.jpg",
-            "main_carousel_text": ""
-          }
         }
       },
       "block_order": [
-        "main_image_x9fWfY",
-        "main_image_kVNEQG",
-        "main_image_kxzMd4",
-        "main_image_p79pxY"
+        "main_image_WLXCgM",
+        "main_image_kVNEQG"
       ],
       "name": "Custom Main Image Carousel",
       "settings": {
