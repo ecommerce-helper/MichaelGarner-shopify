@@ -98,6 +98,12 @@
     "custom_carousel_q4iURK": {
       "type": "custom-carousel",
       "blocks": {
+        "main_image_pbpdKp": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_text": ""
+          }
+        },
         "main_image_fbbE4m": {
           "type": "main_image",
           "settings": {
@@ -148,6 +154,7 @@
         }
       },
       "block_order": [
+        "main_image_pbpdKp",
         "main_image_fbbE4m",
         "main_image_jzeWyH",
         "main_image_wcr6rQ",
