@@ -102,10 +102,10 @@
     <div class="thumb-title">{{ section.settings.main_carousel_title }}</div>
   {% endif %}
 
-  {% for block in section.blocks %}
-    {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
-      <div class="swiper main-slider">
-        <div class="swiper-wrapper">
+  <div class="swiper main-slider">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
           <div class="swiper-slide">
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
@@ -119,42 +119,37 @@
               </div>
             {% endif %}
           </div>
-        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
 
-        <div class="swiper-button-prev main-prev"></div>
-        <div class="swiper-button-next main-next"></div>
-      </div>
-    {% endif %}
-  {% endfor %}
+    <div class="swiper-button-prev main-prev"></div>
+    <div class="swiper-button-next main-next"></div>
+  </div>
 
   {% if section.settings.child_carousel_title != blank %}
     <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
   {% endif %}
 
-  {% for block in section.blocks %}
-    {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
-      <div class="swiper main-slider">
+  <div class="swiper thumb-slider">
+    {% for block in section.blocks %}
+      {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
-              src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
-              alt="Main Carousel Image"
-              height="auto"
+              src="{{ block.settings.child_carousel_image | img_url: "master" }}"
+              alt="Child Carousel Image"
               width="auto"
+              height="auto"
             >
-            {% if block.settings.main_carousel_text != blank %}
-              <div class="description-overlay">
-                {{ block.settings.main_carousel_text }}
-              </div>
-            {% endif %}
           </div>
         </div>
+      {% endif %}
+    {% endfor %}
 
-        <div class="swiper-button-prev main-prev"></div>
-        <div class="swiper-button-next main-next"></div>
-      </div>
-    {% endif %}
-  {% endfor %}
+    <div class="swiper-button-prev thumb-prev"></div>
+    <div class="swiper-button-next thumb-next"></div>
+  </div>
 </section>
 
 <script>
@@ -188,6 +183,8 @@
       },
     },
   });
+
+  console.log("hello world");
 
   // Main Swiper
   var mainSwiper = new Swiper('.main-slider', {
@@ -309,12 +306,7 @@
         {
           "type": "image_picker",
           "id": "child_carousel_image",
-          "label": "child Carousel Image"
-        },
-        {
-          "type": "richtext",
-          "id": "child_carousel_text",
-          "label": "child Carousel Text"
+          "label": "Child Carousel Image"
         }
       ]
     }
