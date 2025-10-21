@@ -59,7 +59,7 @@
   .thumb-slider {
     /* width: 80%; */
     /* height: 150px; */
-    margin: {{ section.settings.thumb_carousel_top_border }}px auto {{ section.settings.thumb_carousel_bottom_border }}px auto;
+    margin: {{ section.settings.child_carousel_top_border }}px auto {{ section.settings.child_carousel_bottom_border }}px auto;
     position: relative;
   }
 
@@ -107,7 +107,7 @@
   <div class="swiper main-slider">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        {% if block.settings.main_carousel_image != blank and block.settings.thumb_carousel_image != blank %}
+        {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
           <div class="swiper-slide">
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
@@ -129,18 +129,18 @@
     <div class="swiper-button-next main-next"></div>
   </div>
 
-  {% if section.settings.thumb_carousel_title != blank %}
-    <div class="thumb-title">{{ section.settings.thumb_carousel_title }}</div>
+  {% if section.settings.child_carousel_title != blank %}
+    <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
   {% endif %}
 
   <div class="swiper thumb-slider">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        {% if block.settings.thumb_carousel_image != blank and block.settings.thumb_carousel_image != blank %}
+        {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
           <div class="swiper-slide">
             <img
-              src="{{ block.settings.thumb_carousel_image | img_url: "master" }}"
-              alt="Thumb Carousel Image"
+              src="{{ block.settings.child_carousel_image | img_url: "master" }}"
+              alt="Child Carousel Image"
               width="auto"
               height="auto"
             >
@@ -267,31 +267,31 @@
     },
     {
       "type": "header",
-      "content": "Thumb Carousel Setting"
+      "content": "Child Carousel Setting"
     },
     {
       "type": "text",
-      "id": "thumb_carousel_title",
-      "label": "Thumb Carousel Title"
+      "id": "child_carousel_title",
+      "label": "Child Carousel Title"
     },
     {
       "type": "range",
-      "id": "thumb_carousel_top_border",
+      "id": "child_carousel_top_border",
       "min": 0,
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Thumb Carousel Top Border",
+      "label": "Child Carousel Top Border",
       "default": 10
     },
     {
       "type": "range",
-      "id": "thumb_carousel_bottom_border",
+      "id": "child_carousel_bottom_border",
       "min": 0,
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Thumb Carousel Bottom Border",
+      "label": "Child Carousel Bottom Border",
       "default": 20
     },
     {
@@ -349,8 +349,8 @@
         },
         {
           "type": "image_picker",
-          "id": "thumb_carousel_image",
-          "label": "Thumb Carousel Image"
+          "id": "child_carousel_image",
+          "label": "Child Carousel Image"
         }
       ]
     }
