@@ -1,9 +1,11 @@
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background: #1a1a1a;
-    /* padding: 40px; */
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
     color: #fff;
+    margin: 0;
+    padding: 0;
   }
 
   .main-title {
@@ -17,149 +19,31 @@
     border-bottom: 2px solid #aaa;
   }
 
-  .main-slider {
+  .swiper {
+    width: 100%;
+    height: 100%;
     max-width: 900px;
     max-height: 700px;
-    margin-top: {{ section.settings.main_carousel_top_border }}px;
-    margin-bottom: {{ section.settings.main_carousel_bottom_border }}px;
-    position: relative;
   }
 
-  .main-slider img {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0;
   }
-
-  .description-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    {% comment %} background: rgba(0, 0, 0, 0.7); {% endcomment %}
-    color: #fff;
-    padding: 20px;
-    font-size: 13px;
-    line-height: 1.6;
-    z-index: 10;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #fff;
-    font-weight: bold;
-  }
-
-  .main-slider .swiper-button-next,
-  .main-slider .swiper-button-prev {
-    color: #fff;
-  }
-
-      {% comment %} body {
-        background: #000;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-      }
-
-      .main-title {
-        width: 80%;
-        margin: {{ section.settings.main_carousel_text_border }}px auto 0px auto;
-        font-weight: bold;
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: #fff;
-        border-bottom: 2px solid #aaa;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-        max-width: 900px;
-        max-height: 700px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #444;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      } {% endcomment %}
 </style>
 
 <section>
-  {% comment %}
-    {% if section.settings.main_carousel_title != blank %}
-      <div class="main-title">{{ section.settings.main_carousel_title }}</div>
-    {% endif %}
-
-    <div class="swiper main-slider">
-      <div class="swiper-wrapper">
-        {% for block in section.blocks %}
-          {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
-            <div class="swiper-slide">
-              <img
-                src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
-                alt="Main Carousel Image"
-                height="auto"
-                width="auto"
-              >
-              {% if block.settings.main_carousel_text != blank %}
-                <div class="description-overlay">
-                  {{ block.settings.main_carousel_text }}
-                </div>
-              {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="swiper-button-prev main-prev"></div>
-      <div class="swiper-button-next main-next"></div>
-    </div>
-
-    {% if section.settings.child_carousel_title != blank %}
-      <div class="thumb-title">{{ section.settings.child_carousel_title }}</div>
-    {% endif %}
-  {% endcomment %}
-
-  {% comment %}
-    <div class="swiper thumb-slider">
-      <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
-                style="width: min-content"
-              {% endif %}>
-        {% for block in section.blocks %}
-          {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
-            <div class="swiper-slide">
-              <img
-                src="{{ block.settings.child_carousel_image | img_url: "master" }}"
-                alt="Child Carousel Image"
-                width="auto"
-                height="auto"
-              >
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-      <div class="swiper-button-prev thumb-prev"></div>
-      <div class="swiper-button-next thumb-next"></div>
-    </div>
-  {% endcomment %}
-
   {% if section.settings.main_carousel_title != blank %}
     <div class="main-title">{{ section.settings.main_carousel_title }}</div>
   {% endif %}
@@ -190,90 +74,23 @@
 </section>
 
 <script>
-  // Thumbnail Swiper
-  {% comment %} var thumbSwiper = new Swiper('.thumb-slider', {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    centeredSlides: true,
     loop: true,
-    navigation: {
-      nextEl: '.thumb-next',
-      prevEl: '.thumb-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 3,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
-      },
-    },
-  });
-
-  // Main Swiper
-  var mainSwiper = new Swiper('.main-slider', {
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-      nextEl: '.main-next',
-      prevEl: '.main-prev',
-    },
-    thumbs: {
-      swiper: thumbSwiper,
-    },
-
-    {% if section.settings.auto_slide == true %}
     autoplay: {
-      delay: {{ section.settings.auto_main_slide_speed }},
-      disableOnInteraction: false, // keep autoplay running after user interaction
-    },
-    {% endif %}
-    speed: 800, // smooth slide transition
-  });
-
-  // Optional: autoplay the thumbnail slider too (to stay in sync)
-  {% if section.settings.auto_slide == true %}
-    thumbSwiper.params.autoplay = {
-      delay: {{ section.settings.auto_thumb_slide_speed }} + 800,
+      delay: 2500,
       disableOnInteraction: false,
-    };
-  thumbSwiper.autoplay.start();
-
-  {% endif %}
-
-  // Optional: pause autoplay when hovering main slider
-  const mainEl = document.querySelector('.main-slider');
-  mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
-  mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start()); {% endcomment %}
-
-   var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 </script>
 
 {% schema %}
