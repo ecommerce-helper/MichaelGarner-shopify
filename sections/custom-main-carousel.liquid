@@ -1,0 +1,211 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    /* padding: 40px; */
+    color: #fff;
+  }
+
+  .main-title {
+    width: 80%;
+    margin: {{ section.settings.main_carousel_text_border }}px auto 0px auto;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 2px solid #aaa;
+  }
+
+  .main-slider {
+    width: 80%;
+    height: 400px;
+    margin-top: {{ section.settings.main_carousel_top_border }}px;
+    margin-bottom: {{ section.settings.main_carousel_bottom_border }}px;
+    position: relative;
+  }
+
+  .main-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .description-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    {% comment %} background: rgba(0, 0, 0, 0.7); {% endcomment %}
+    color: #fff;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    z-index: 10;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .main-slider .swiper-button-next,
+  .main-slider .swiper-button-prev {
+    color: #fff;
+  }
+</style>
+
+<section>
+  {% if section.settings.main_carousel_title != blank %}
+    <div class="main-title">{{ section.settings.main_carousel_title }}</div>
+  {% endif %}
+
+  <div class="swiper main-slider">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.main_carousel_image != blank and block.settings.child_carousel_image != blank %}
+          <div class="swiper-slide">
+            <img
+              src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
+              alt="Main Carousel Image"
+              height="auto"
+              width="auto"
+            >
+            {% if block.settings.main_carousel_text != blank %}
+              <div class="description-overlay">
+                {{ block.settings.main_carousel_text }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="swiper-button-prev main-prev"></div>
+    <div class="swiper-button-next main-next"></div>
+  </div>
+</section>
+
+<script>
+      // Main Swiper
+  var mainSwiper = new Swiper('.main-slider', {
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.main-next',
+      prevEl: '.main-prev',
+    },
+    thumbs: {
+      swiper: thumbSwiper,
+    },
+
+    {% if section.settings.auto_slide == true %}
+    autoplay: {
+      delay: {{ section.settings.auto_main_slide_speed }},
+      disableOnInteraction: false, // keep autoplay running after user interaction
+    },
+    {% endif %}
+    speed: 800, // smooth slide transition
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Main Carousel",
+  "disabled_on": {
+    "groups": ["aside", "header", "footer", "custom.hero"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main Carousel Setting"
+    },
+    {
+      "type": "text",
+      "id": "main_carousel_title",
+      "label": "Main Carousel Title"
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_text_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Main Carousel Text Border",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_top_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Main Carousel Top Border",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "main_carousel_bottom_border",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Main Carousel Bottom Border",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Carousel Slide Setting"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_slide",
+      "label": "Auto Slide",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "auto_main_slide_speed",
+      "min": 0,
+      "max": 8000,
+      "step": 1000,
+      "unit": "s",
+      "label": "Auto Main Slide Speed",
+      "default": 1000,
+      "visible_if": "{{ section.settings.auto_slide == true }}"
+    },
+  ],
+  "blocks": [
+    {
+      "name": "Main Image",
+      "type": "main_image",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Corousel Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_carousel_image",
+          "label": "Main Crousel Image"
+        },
+        {
+          "type": "richtext",
+          "id": "main_carousel_text",
+          "label": "Main Carousel_text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Main Carousel"
+    }
+  ]
+}
+{% endschema %}

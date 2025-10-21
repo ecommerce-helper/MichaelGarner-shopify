@@ -134,9 +134,12 @@
   {% endif %}
 
   <div class="swiper thumb-slider">
-    <div class="swiper-wrapper" {% if section.blocks.size < 6 %}
-              style="width: min-content"
-            {% endif %}>
+    <div
+      class="swiper-wrapper"
+      {% if section.blocks.size < 6 %}
+        style="width: min-content"
+      {% endif %}
+    >
       {% for block in section.blocks %}
         {% if block.settings.child_carousel_image != blank and block.settings.child_carousel_image != blank %}
           <div class="swiper-slide">
@@ -158,7 +161,7 @@
 
 <script>
   // Thumbnail Swiper
-  {% comment %} var thumbSwiper = new Swiper('.thumb-slider', {
+  var thumbSwiper = new Swiper('.thumb-slider', {
     spaceBetween: 10,
     slidesPerView: 5,
     freeMode: true,
@@ -186,7 +189,7 @@
         spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
       },
     },
-  }); {% endcomment %}
+  });
 
   // Main Swiper
   var mainSwiper = new Swiper('.main-slider', {
@@ -210,14 +213,14 @@
   });
 
   // Optional: autoplay the thumbnail slider too (to stay in sync)
-  {% comment %} {% if section.settings.auto_slide == true %}
+  {% if section.settings.auto_slide == true %}
     thumbSwiper.params.autoplay = {
       delay: {{ section.settings.auto_thumb_slide_speed }} + 800,
       disableOnInteraction: false,
     };
   thumbSwiper.autoplay.start();
 
-  {% endif %} {% endcomment %}
+  {% endif %}
 
   // Optional: pause autoplay when hovering main slider
   const mainEl = document.querySelector('.main-slider');
