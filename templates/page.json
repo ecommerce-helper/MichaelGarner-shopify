@@ -208,10 +208,34 @@
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
             "main_carousel_text": ""
           }
+        },
+        "main_image_pmKaNj": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_aW3dmp": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-9.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_KjkVPN": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
+            "main_carousel_text": ""
+          }
         }
       },
       "block_order": [
-        "main_image_Gc4Qhm"
+        "main_image_Gc4Qhm",
+        "main_image_pmKaNj",
+        "main_image_aW3dmp",
+        "main_image_KjkVPN"
       ],
       "name": "Custom Main Carousel",
       "settings": {
