@@ -229,13 +229,27 @@
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
             "main_carousel_text": ""
           }
+        },
+        "main_image_Q3d6eE": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_3xqj9F": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_text": ""
+          }
         }
       },
       "block_order": [
         "main_image_Gc4Qhm",
         "main_image_pmKaNj",
         "main_image_aW3dmp",
-        "main_image_KjkVPN"
+        "main_image_KjkVPN",
+        "main_image_Q3d6eE",
+        "main_image_3xqj9F"
       ],
       "name": "Custom Main Carousel",
       "settings": {
@@ -243,7 +257,7 @@
         "main_carousel_text_border": 10,
         "main_carousel_top_border": 10,
         "main_carousel_bottom_border": 20,
-        "auto_slide": true,
+        "auto_slide": false,
         "auto_main_slide_speed": 3000
       }
     },
@@ -268,7 +282,31 @@
             "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
           }
         },
+        "thumb_image_eXepCL": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
+          }
+        },
         "thumb_image_wBDCdg": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
+          }
+        },
+        "thumb_image_hRMb8A": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
+          }
+        },
+        "thumb_image_aAByPh": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
+          }
+        },
+        "thumb_image_nmyEbJ": {
           "type": "thumb_image",
           "settings": {
             "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
@@ -279,7 +317,11 @@
         "thumb_image_xjqaU3",
         "thumb_image_WKRCTH",
         "thumb_image_AzWMBA",
-        "thumb_image_wBDCdg"
+        "thumb_image_eXepCL",
+        "thumb_image_wBDCdg",
+        "thumb_image_hRMb8A",
+        "thumb_image_aAByPh",
+        "thumb_image_nmyEbJ"
       ],
       "name": "Custom Thumbnail Carousel",
       "settings": {
@@ -288,7 +330,7 @@
         "child_carousel_top_border": 10,
         "child_carousel_bottom_border": 20,
         "thumb_carousel_image_gaps": 10,
-        "auto_slide": true,
+        "auto_slide": false,
         "auto_thumb_slide_speed": 3000
       }
     }
