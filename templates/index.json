@@ -258,7 +258,6 @@
         "image_k9YWWW",
         "image_xEkXiF"
       ],
-      "disabled": true,
       "name": "Collage",
       "settings": {
         "title": "",
@@ -500,6 +499,61 @@
       "disabled": true,
       "name": "Slider Revolution--Slider 1",
       "settings": {}
+    },
+    "collection_list_tTCMJ7": {
+      "type": "collection-list",
+      "name": "Collection list",
+      "settings": {
+        "title": "Collection list",
+        "collection_list": [
+          "trace",
+          "light-modulators",
+          "conductors-accessories",
+          "power-control"
+        ],
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 4,
+        "standard_layout_align_items": "items-center",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-top justify-start",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "collection_list_carousel_9rc98f": {
+      "type": "collection-list-carousel",
+      "name": "Collection list (carousel)",
+      "settings": {
+        "title": "Collection list carousel",
+        "collection_list": [
+          "trace",
+          "light-modulators",
+          "conductors-accessories"
+        ],
+        "item_width_mobile": 65,
+        "item_width_desktop": 40,
+        "snap_alignment": "snap-start",
+        "align_items": "items-start",
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": true,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
     }
   },
   "order": [
@@ -516,6 +570,8 @@
     "rich_text_6UAmUK",
     "newsletter",
     "collection_carousel_EJmazw",
-    "rev_slider_1_6Yntyj"
+    "rev_slider_1_6Yntyj",
+    "collection_list_tTCMJ7",
+    "collection_list_carousel_9rc98f"
   ]
 }
