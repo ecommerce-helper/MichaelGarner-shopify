@@ -107,19 +107,21 @@
         spaceBetween: {{ section.settings.thumb_carousel_image_gaps }},
       },
     },
-    {% if section.settings.auto_slide == true %}
+    {% if section.settings.auto_slide  %}
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
-      speed: 800, // smooth slide transition
     {% endif %}
+      speed: 800, // smooth slide transition
   });
 
   // Optional: pause autoplay when hovering
-  const thumbEl = document.querySelector('.thumb-slider');
-  thumbEl.addEventListener('mouseenter', () => thumbSwiper.autoplay.stop());
-  thumbEl.addEventListener('mouseleave', () => thumbSwiper.autoplay.start());
+  {% if section.settings.auto_slide  %}
+    const thumbEl = document.querySelector('.thumb-slider');
+    thumbEl.addEventListener('mouseenter', () => thumbSwiper.autoplay.stop());
+    thumbEl.addEventListener('mouseleave', () => thumbSwiper.autoplay.start());
+  {% endif %}
 </script>
 
 {% schema %}

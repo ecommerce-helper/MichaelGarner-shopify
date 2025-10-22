@@ -27,6 +27,8 @@
   .main-slider img {
     width: 100%;
     height: 100%;
+    max-width: 900px;
+    max-height: 700px;
     object-fit: cover;
     border-radius: 0;
   }
@@ -63,7 +65,8 @@
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
               alt="Main Carousel Image"
-              width="auto" height="auto"
+              width="auto"
+              height="auto"
             >
             {% if block.settings.main_carousel_text != blank %}
               <div class="description-overlay">
@@ -100,11 +103,13 @@
     });
 
     // Optional hover pause (only if autoplay is active)
-    const mainEl = document.querySelector('.main-slider');
-    if (mainSwiper.params.autoplay) {
-      mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
-      mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
-    }
+    {% if section.settings.auto_slide %}
+      const mainEl = document.querySelector('.main-slider');
+      if (mainSwiper.params.autoplay) {
+        mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
+        mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
+      }
+    {% endif %}
   });
 </script>
 
