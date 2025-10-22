@@ -198,6 +198,54 @@
         "space_above": 0,
         "space_below": 0
       }
+    },
+    "custom_main_carousel_hFbPtP": {
+      "type": "custom-main-carousel",
+      "blocks": {
+        "main_image_Gc4Qhm": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
+            "main_carousel_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_image_Gc4Qhm"
+      ],
+      "name": "Custom Main Carousel",
+      "settings": {
+        "main_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "main_carousel_top_border": 10,
+        "main_carousel_bottom_border": 20,
+        "auto_slide": true,
+        "auto_main_slide_speed": 3000
+      }
+    },
+    "custom_thumb_carousel_wKNC8M": {
+      "type": "custom-thumb-carousel",
+      "blocks": {
+        "thumb_image_xjqaU3": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
+          }
+        }
+      },
+      "block_order": [
+        "thumb_image_xjqaU3"
+      ],
+      "name": "Custom Thumbnail Carousel",
+      "settings": {
+        "child_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "child_carousel_top_border": 10,
+        "child_carousel_bottom_border": 20,
+        "thumb_carousel_image_gaps": 10,
+        "auto_slide": true,
+        "auto_thumb_slide_speed": 3000
+      }
     }
   },
   "order": [
@@ -207,6 +255,8 @@
     "video_qPVJP6",
     "image_gallery_xdXQLJ",
     "image_gallery_QyPY6z",
-    "image_gallery_kRUBqE"
+    "image_gallery_kRUBqE",
+    "custom_main_carousel_hFbPtP",
+    "custom_thumb_carousel_wKNC8M"
   ]
 }
