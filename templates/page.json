@@ -38,57 +38,102 @@
         "space_below": 1
       }
     },
-    "rev_section_1_KxELK3": {
-      "type": "rev_section-1",
-      "name": "Slider Revolution--Section 1",
-      "settings": {}
-    },
-    "rev_section_2_jbKYih": {
-      "type": "rev_section-2",
-      "name": "Slider Revolution--Section 2",
-      "settings": {}
-    },
-    "rev_section_3_3zqEVL": {
-      "type": "rev_section-3",
-      "name": "Slider Revolution--Section 3",
-      "settings": {}
-    },
-    "rev_section_4_6GcwV4": {
-      "type": "rev_section-4",
-      "name": "Slider Revolution--Section 4",
-      "settings": {}
-    },
-    "rev_section_5_RpLaK7": {
-      "type": "rev_section-5",
-      "name": "Slider Revolution--Section 5",
-      "settings": {}
-    },
-    "rev_section_6_ALVWLD": {
-      "type": "rev_section-6",
-      "name": "Slider Revolution--Section 6",
-      "settings": {}
-    },
-    "rev_section_7_jk7UqE": {
-      "type": "rev_section-7",
-      "name": "Slider Revolution--Section 7",
-      "settings": {}
-    },
-    "rev_section_8_qVAjjP": {
-      "type": "rev_section-8",
-      "name": "Slider Revolution--Section 8",
-      "settings": {}
+    "image_gallery_b7xipG": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_iDNphY": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_MdjR46": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_gxxtTA": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_p9maDp": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_fxFnXm": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_eLg9AM": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_zH86FM": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_JtpqGP": {
+          "type": "image",
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_iDNphY",
+        "image_MdjR46",
+        "image_gxxtTA",
+        "image_p9maDp",
+        "image_fxFnXm",
+        "image_eLg9AM",
+        "image_zH86FM",
+        "image_JtpqGP"
+      ],
+      "name": "Image gallery",
+      "settings": {
+        "title": "",
+        "grid_type": "modular",
+        "mobile_columns": "2",
+        "desktop_columns": 5,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
     }
   },
   "order": [
     "main",
     "feature_text_YBnUD4",
-    "rev_section_1_KxELK3",
-    "rev_section_2_jbKYih",
-    "rev_section_3_3zqEVL",
-    "rev_section_4_6GcwV4",
-    "rev_section_5_RpLaK7",
-    "rev_section_6_ALVWLD",
-    "rev_section_7_jk7UqE",
-    "rev_section_8_qVAjjP"
+    "image_gallery_b7xipG"
   ]
 }
