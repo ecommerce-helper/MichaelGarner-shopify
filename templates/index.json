@@ -124,8 +124,8 @@
         "child_carousel_top_border": 78,
         "child_carousel_bottom_border": 61,
         "thumb_carousel_image_gaps": 40,
-        "auto_slide": false,
-        "auto_thumb_slide_speed": 3000
+        "auto_slide": true,
+        "auto_thumb_slide_speed": 1000
       }
     },
     "custom_liquid_z3mEEh": {
