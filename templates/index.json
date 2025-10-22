@@ -29,21 +29,21 @@
           "type": "main_image",
           "settings": {
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
-            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           }
         },
         "main_image_NaAkan": {
           "type": "main_image",
           "settings": {
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
-            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           }
         },
         "main_image_8Hwd9k": {
           "type": "main_image",
           "settings": {
             "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
-            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+            "main_carousel_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
           }
         }
       },
@@ -58,8 +58,8 @@
         "main_carousel_text_border": 39,
         "main_carousel_top_border": 10,
         "main_carousel_bottom_border": 20,
-        "auto_slide": false,
-        "auto_main_slide_speed": 6000
+        "auto_slide": true,
+        "auto_main_slide_speed": 1000
       }
     },
     "custom_thumb_carousel_JPgMt9": {
