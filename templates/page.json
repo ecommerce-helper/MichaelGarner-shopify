@@ -44,76 +44,108 @@
         "image_iDNphY": {
           "type": "image",
           "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_MdjR46": {
-          "type": "image",
-          "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_gxxtTA": {
-          "type": "image",
-          "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_p9maDp": {
-          "type": "image",
-          "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_fxFnXm": {
-          "type": "image",
-          "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_eLg9AM": {
-          "type": "image",
-          "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_zH86FM": {
-          "type": "image",
-          "settings": {
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_JtpqGP": {
-          "type": "image",
-          "settings": {
+            "image": "shopify://shop_images/howto1.png",
             "caption": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "image_iDNphY",
-        "image_MdjR46",
-        "image_gxxtTA",
-        "image_p9maDp",
-        "image_fxFnXm",
-        "image_eLg9AM",
-        "image_zH86FM",
-        "image_JtpqGP"
+        "image_iDNphY"
       ],
       "name": "Image gallery",
       "settings": {
         "title": "",
-        "grid_type": "modular",
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 1,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 0.5,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
+    },
+    "video_qPVJP6": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "title": "",
+        "video": "shopify://files/videos/Corner Connector Short.mp4",
+        "mode": "autoplay",
+        "playback": "inline",
+        "caption": "",
+        "link": "",
+        "enable_full_bleed": false
+      }
+    },
+    "image_gallery_xdXQLJ": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_PwgwCY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Overview.png",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PwgwCY"
+      ],
+      "name": "Image gallery",
+      "settings": {
+        "title": "",
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 1,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 0.5,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-top justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
+    },
+    "image_gallery_QyPY6z": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_imTbPc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howto2.png",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_imTbPc"
+      ],
+      "name": "Image gallery",
+      "settings": {
+        "title": "",
+        "grid_type": "standard",
         "mobile_columns": "2",
-        "desktop_columns": 5,
+        "desktop_columns": 1,
         "standard_layout_align_items": "items-start",
         "modular_layout_variation": 1,
         "modular_grid_item_aspect_ratio": 1,
@@ -126,14 +158,55 @@
         "labels_display": "below_media",
         "labels_always_show_on_mobile": false,
         "color_scheme": "",
-        "space_above": 1,
-        "space_below": 1
+        "space_above": 0,
+        "space_below": 0
+      }
+    },
+    "image_gallery_kRUBqE": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_bkVXY4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howto3.png",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_bkVXY4"
+      ],
+      "name": "Image gallery",
+      "settings": {
+        "title": "",
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 1,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
       }
     }
   },
   "order": [
     "main",
     "feature_text_YBnUD4",
-    "image_gallery_b7xipG"
+    "image_gallery_b7xipG",
+    "video_qPVJP6",
+    "image_gallery_xdXQLJ",
+    "image_gallery_QyPY6z",
+    "image_gallery_kRUBqE"
   ]
 }
