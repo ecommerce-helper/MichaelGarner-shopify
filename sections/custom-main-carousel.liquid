@@ -63,8 +63,6 @@
             <img
               src="{{ block.settings.main_carousel_image | img_url: 'master' }}"
               alt="Main Carousel Image"
-              height="auto"
-              width="auto"
             >
             {% if block.settings.main_carousel_text != blank %}
               <div class="description-overlay">
@@ -76,33 +74,37 @@
       {% endfor %}
     </div>
 
+    <!-- Navigation buttons -->
     <div class="swiper-button-prev main-prev"></div>
     <div class="swiper-button-next main-next"></div>
   </div>
 </section>
 
 <script>
-  // Main Swiper Only
-  var mainSwiper = new Swiper('.main-slider', {
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-      nextEl: '.main-next',
-      prevEl: '.main-prev',
-    },
-    {% if section.settings.auto_slide == true %}
+  document.addEventListener("DOMContentLoaded", function() {
+    var mainSwiper = new Swiper('.main-slider', {
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: '.main-next',
+        prevEl: '.main-prev',
+      },
+      speed: 800,
+      {% if section.settings.auto_slide %}
       autoplay: {
         delay: {{ section.settings.auto_main_slide_speed }},
         disableOnInteraction: false,
       },
-    {% endif %}
-      speed: 800, // smooth transition
-  });
+      {% endif %}
+    });
 
-  // Optional: pause autoplay when hovering
-  const mainEl = document.querySelector('.main-slider');
-  mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
-  mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
+    // Optional hover pause (only if autoplay is active)
+    const mainEl = document.querySelector('.main-slider');
+    if (mainSwiper.params.autoplay) {
+      mainEl.addEventListener('mouseenter', () => mainSwiper.autoplay.stop());
+      mainEl.addEventListener('mouseleave', () => mainSwiper.autoplay.start());
+    }
+  });
 </script>
 
 {% schema %}
@@ -169,8 +171,7 @@
       "step": 1000,
       "unit": "ms",
       "label": "Auto Slide Speed",
-      "default": 3000,
-      "visible_if": "{{ section.settings.auto_slide == true }}"
+      "default": 3000
     }
   ],
   "blocks": [
