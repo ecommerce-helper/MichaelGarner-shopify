@@ -255,10 +255,31 @@
           "settings": {
             "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
           }
+        },
+        "thumb_image_WKRCTH": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16_f61e6756-2a8e-4ade-86fc-202a57a8c1d3.png"
+          }
+        },
+        "thumb_image_AzWMBA": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
+          }
+        },
+        "thumb_image_wBDCdg": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
+          }
         }
       },
       "block_order": [
-        "thumb_image_xjqaU3"
+        "thumb_image_xjqaU3",
+        "thumb_image_WKRCTH",
+        "thumb_image_AzWMBA",
+        "thumb_image_wBDCdg"
       ],
       "name": "Custom Thumbnail Carousel",
       "settings": {
