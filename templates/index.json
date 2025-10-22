@@ -52,6 +52,7 @@
         "main_image_NaAkan",
         "main_image_8Hwd9k"
       ],
+      "disabled": true,
       "name": "Custom Main Carousel",
       "settings": {
         "main_carousel_title": "in action",
@@ -117,6 +118,7 @@
         "thumb_image_ETM7QF",
         "thumb_image_HKbRKj"
       ],
+      "disabled": true,
       "name": "Custom Thumbnail Carousel",
       "settings": {
         "child_carousel_title": "trace kits",
@@ -140,65 +142,6 @@
         "color_scheme": "",
         "space_above": 0.5,
         "space_below": 0.5
-      }
-    },
-    "image_slideshow_k9XmiG": {
-      "type": "image-slideshow",
-      "blocks": {
-        "image_Mt9N7H": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1.png",
-            "caption": "Elements",
-            "link": ""
-          }
-        },
-        "image_HiY3gn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LM2_NoisyBump_Wide.png",
-            "caption": "Light Modulators",
-            "link": ""
-          }
-        },
-        "image_YQwi9G": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/T_Connect_on_Trace.png",
-            "caption": "Conductors & Connectors",
-            "link": ""
-          }
-        },
-        "image_pUhJJB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/TPS.png",
-            "caption": "Power & Control",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_Mt9N7H",
-        "image_HiY3gn",
-        "image_YQwi9G",
-        "image_pUhJJB"
-      ],
-      "name": "Image slideshow",
-      "settings": {
-        "title": "",
-        "mode": "horizontal",
-        "style": "full_screen",
-        "section_height": "h-screen-adaptive",
-        "section_height_desktop": "same_as_mobile",
-        "max_width_of_slides": 80,
-        "labels_show_titles_and_captions": true,
-        "labels_display": "footer",
-        "labels_always_show_on_mobile": false,
-        "show_index_and_total_slides": true,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "color_scheme": ""
       }
     },
     "collage_TFL3B4": {
@@ -557,19 +500,6 @@
       "disabled": true,
       "name": "Slider Revolution--Slider 1",
       "settings": {}
-    },
-    "video_jtKpbz": {
-      "type": "video",
-      "name": "Video",
-      "settings": {
-        "title": "",
-        "video": "shopify://files/videos/Glance_5a2d0665-b324-4ae4-8e2a-02310d089137.mp4",
-        "mode": "preview",
-        "playback": "inline",
-        "caption": "",
-        "link": "",
-        "enable_full_bleed": false
-      }
     }
   },
   "order": [
@@ -577,7 +507,6 @@
     "custom_main_carousel_xqPpXA",
     "custom_thumb_carousel_JPgMt9",
     "custom_liquid_z3mEEh",
-    "image_slideshow_k9XmiG",
     "collage_TFL3B4",
     "featured_collection_67fmbD",
     "featured_collection_mRqRCQ",
@@ -587,7 +516,6 @@
     "rich_text_6UAmUK",
     "newsletter",
     "collection_carousel_EJmazw",
-    "rev_slider_1_6Yntyj",
-    "video_jtKpbz"
+    "rev_slider_1_6Yntyj"
   ]
 }
