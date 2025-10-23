@@ -21,6 +21,7 @@
     },
     "feature_text_YBnUD4": {
       "type": "feature-text",
+      "disabled": true,
       "name": "Feature text",
       "settings": {
         "richtext": "",
