@@ -95,12 +95,37 @@
         "disable_left_and_right_margins": false,
         "remove_grid_gaps": false
       }
+    },
+    "collection_list_carousel_r8RayL": {
+      "type": "collection-list-carousel",
+      "name": "Collection list (carousel)",
+      "settings": {
+        "title": "",
+        "collection_list": [
+          "trace",
+          "light-modulators",
+          "conductors-accessories",
+          "power-control"
+        ],
+        "item_width_mobile": 80,
+        "item_width_desktop": 40,
+        "snap_alignment": "snap-start",
+        "align_items": "items-start",
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
     }
   },
   "order": [
     "main",
     "feature_text_YBnUD4",
     "collection_carousel_7gX3Re",
-    "collection_list_6kJtVq"
+    "collection_list_6kJtVq",
+    "collection_list_carousel_r8RayL"
   ]
 }
