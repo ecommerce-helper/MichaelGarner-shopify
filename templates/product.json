@@ -15,8 +15,8 @@
       "settings": {
         "hide_featured_media": true,
         "mode": "horizontal",
-        "style": "full_screen",
-        "section_height": "h-screen-adaptive",
+        "style": "inset",
+        "section_height": "h-screen-50",
         "section_height_desktop": "same_as_mobile",
         "max_width_of_slides": 80,
         "enable_image_zoom": false,
