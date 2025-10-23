@@ -41,19 +41,6 @@
     },
     "image_gallery_b7xipG": {
       "type": "image-gallery",
-      "blocks": {
-        "image_iDNphY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/howto1.png",
-            "caption": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_iDNphY"
-      ],
       "name": "Image gallery",
       "settings": {
         "title": "",
