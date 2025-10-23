@@ -124,7 +124,7 @@
       "settings": {
         "title": "You may also like",
         "products_to_show": 3,
-        "grid_type": "modular",
+        "grid_type": "standard",
         "mobile_columns": "1",
         "desktop_columns": 4,
         "standard_layout_align_items": "items-start",
@@ -231,6 +231,7 @@
       "blocks": {
         "slider_revolution_slider_general_rGd8RG": {
           "type": "shopify://apps/slider-revolution/blocks/slider_general/d2c2325b-ecb9-42b8-a0b0-ca2ffb6e3203",
+          "disabled": true,
           "settings": {
             "slider_id": "slider-1",
             "hide_on_desktop": false,
@@ -258,6 +259,7 @@
     },
     "products_carousel_myiUQM": {
       "type": "products-carousel",
+      "disabled": true,
       "name": "Products (carousel)",
       "settings": {
         "title": "",
