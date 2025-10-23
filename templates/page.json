@@ -41,6 +41,19 @@
     },
     "image_gallery_b7xipG": {
       "type": "image-gallery",
+      "blocks": {
+        "image_jYapBA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howto1.png",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jYapBA"
+      ],
       "name": "Image gallery",
       "settings": {
         "title": "",
