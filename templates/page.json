@@ -56,7 +56,7 @@
         "labels_display": "below_media",
         "labels_show_product_vendor": false,
         "labels_always_show_on_mobile": false,
-        "show_index_and_total_slides": true,
+        "show_index_and_total_slides": false,
         "quick_view": "disabled",
         "product_info_text_alignment": "left",
         "color_scheme": "",
