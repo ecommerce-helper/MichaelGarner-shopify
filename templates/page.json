@@ -39,114 +39,45 @@
         "space_below": 1
       }
     },
-    "image_gallery_b7xipG": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_jYapBA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/howto1.png",
-            "caption": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_jYapBA"
-      ],
-      "name": "Image gallery",
+    "collection_carousel_7gX3Re": {
+      "type": "collection-carousel",
+      "name": "Collection (carousel)",
       "settings": {
         "title": "",
-        "grid_type": "standard",
-        "mobile_columns": "1",
-        "desktop_columns": 1,
-        "standard_layout_align_items": "items-start",
-        "modular_layout_variation": 1,
-        "modular_grid_item_aspect_ratio": 0.5,
-        "modular_no_crop_media_mobile": false,
-        "irregular_layout_variation": 1,
-        "irregular_alignment_of_items": "items-center justify-center",
-        "media_aspect_ratio": "natural",
-        "media_fill_space": false,
+        "collection": "trace",
+        "products_to_show": 3,
+        "show_view_all": false,
+        "item_width_mobile": 80,
+        "item_width_desktop": 40,
+        "snap_alignment": "snap-start",
+        "align_items": "items-center",
         "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": false,
         "labels_display": "below_media",
+        "labels_show_product_vendor": false,
         "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": true,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
         "color_scheme": "",
         "space_above": 0,
         "space_below": 0
       }
     },
-    "video_qPVJP6": {
-      "type": "video",
-      "name": "Video",
+    "collection_list_6kJtVq": {
+      "type": "collection-list",
+      "name": "Collection list",
       "settings": {
-        "title": "",
-        "video": "shopify://files/videos/Corner Connector Short.mp4",
-        "mode": "autoplay",
-        "playback": "inline",
-        "caption": "",
-        "link": "",
-        "enable_full_bleed": false
-      }
-    },
-    "image_gallery_xdXQLJ": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_PwgwCY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Overview.png",
-            "caption": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_PwgwCY"
-      ],
-      "name": "Image gallery",
-      "settings": {
-        "title": "",
+        "title": "Collection list",
+        "collection_list": [
+          "trace",
+          "light-modulators",
+          "conductors-accessories",
+          "power-control"
+        ],
         "grid_type": "standard",
         "mobile_columns": "1",
-        "desktop_columns": 1,
-        "standard_layout_align_items": "items-start",
-        "modular_layout_variation": 1,
-        "modular_grid_item_aspect_ratio": 0.5,
-        "modular_no_crop_media_mobile": false,
-        "irregular_layout_variation": 1,
-        "irregular_alignment_of_items": "items-top justify-center",
-        "media_aspect_ratio": "natural",
-        "media_fill_space": false,
-        "labels_show_titles_and_captions": true,
-        "labels_display": "below_media",
-        "labels_always_show_on_mobile": false,
-        "color_scheme": "",
-        "space_above": 0,
-        "space_below": 0
-      }
-    },
-    "image_gallery_QyPY6z": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_imTbPc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/howto2.png",
-            "caption": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_imTbPc"
-      ],
-      "name": "Image gallery",
-      "settings": {
-        "title": "",
-        "grid_type": "standard",
-        "mobile_columns": "2",
-        "desktop_columns": 1,
+        "desktop_columns": 4,
         "standard_layout_align_items": "items-start",
         "modular_layout_variation": 1,
         "modular_grid_item_aspect_ratio": 1,
@@ -159,192 +90,17 @@
         "labels_display": "below_media",
         "labels_always_show_on_mobile": false,
         "color_scheme": "",
-        "space_above": 0,
-        "space_below": 0
-      }
-    },
-    "image_gallery_kRUBqE": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_bkVXY4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/howto3.png",
-            "caption": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_bkVXY4"
-      ],
-      "name": "Image gallery",
-      "settings": {
-        "title": "",
-        "grid_type": "standard",
-        "mobile_columns": "1",
-        "desktop_columns": 1,
-        "standard_layout_align_items": "items-start",
-        "modular_layout_variation": 1,
-        "modular_grid_item_aspect_ratio": 1,
-        "modular_no_crop_media_mobile": false,
-        "irregular_layout_variation": 1,
-        "irregular_alignment_of_items": "items-center justify-center",
-        "media_aspect_ratio": "natural",
-        "media_fill_space": false,
-        "labels_show_titles_and_captions": true,
-        "labels_display": "below_media",
-        "labels_always_show_on_mobile": false,
-        "color_scheme": "",
-        "space_above": 0,
-        "space_below": 0
-      }
-    },
-    "custom_main_carousel_hFbPtP": {
-      "type": "custom-main-carousel",
-      "blocks": {
-        "main_image_Gc4Qhm": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_pmKaNj": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13.png",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_aW3dmp": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-9.png",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_KjkVPN": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_Q3d6eE": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_text": ""
-          }
-        },
-        "main_image_3xqj9F": {
-          "type": "main_image",
-          "settings": {
-            "main_carousel_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "main_image_Gc4Qhm",
-        "main_image_pmKaNj",
-        "main_image_aW3dmp",
-        "main_image_KjkVPN",
-        "main_image_Q3d6eE",
-        "main_image_3xqj9F"
-      ],
-      "name": "Custom Main Carousel",
-      "settings": {
-        "main_carousel_title": "",
-        "main_carousel_text_border": 10,
-        "main_carousel_top_border": 10,
-        "main_carousel_bottom_border": 20,
-        "auto_slide": false,
-        "auto_main_slide_speed": 3000
-      }
-    },
-    "custom_thumb_carousel_wKNC8M": {
-      "type": "custom-thumb-carousel",
-      "blocks": {
-        "thumb_image_xjqaU3": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
-          }
-        },
-        "thumb_image_WKRCTH": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16_f61e6756-2a8e-4ade-86fc-202a57a8c1d3.png"
-          }
-        },
-        "thumb_image_AzWMBA": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
-          }
-        },
-        "thumb_image_eXepCL": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
-          }
-        },
-        "thumb_image_wBDCdg": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
-          }
-        },
-        "thumb_image_hRMb8A": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
-          }
-        },
-        "thumb_image_aAByPh": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
-          }
-        },
-        "thumb_image_nmyEbJ": {
-          "type": "thumb_image",
-          "settings": {
-            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16.png"
-          }
-        }
-      },
-      "block_order": [
-        "thumb_image_xjqaU3",
-        "thumb_image_WKRCTH",
-        "thumb_image_AzWMBA",
-        "thumb_image_eXepCL",
-        "thumb_image_wBDCdg",
-        "thumb_image_hRMb8A",
-        "thumb_image_aAByPh",
-        "thumb_image_nmyEbJ"
-      ],
-      "name": "Custom Thumbnail Carousel",
-      "settings": {
-        "child_carousel_title": "",
-        "main_carousel_text_border": 10,
-        "child_carousel_top_border": 10,
-        "child_carousel_bottom_border": 20,
-        "thumb_carousel_image_gaps": 10,
-        "auto_slide": false,
-        "auto_thumb_slide_speed": 3000
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
       }
     }
   },
   "order": [
     "main",
     "feature_text_YBnUD4",
-    "image_gallery_b7xipG",
-    "video_qPVJP6",
-    "image_gallery_xdXQLJ",
-    "image_gallery_QyPY6z",
-    "image_gallery_kRUBqE",
-    "custom_main_carousel_hFbPtP",
-    "custom_thumb_carousel_wKNC8M"
+    "collection_carousel_7gX3Re",
+    "collection_list_6kJtVq"
   ]
 }
