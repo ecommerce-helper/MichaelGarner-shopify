@@ -220,7 +220,7 @@
         "item_width_mobile": 65,
         "item_width_desktop": 40,
         "snap_alignment": "snap-start",
-        "align_items": "items-start",
+        "align_items": "items-center",
         "labels_show_titles_and_captions": true,
         "labels_display": "below_media",
         "labels_always_show_on_mobile": false,
