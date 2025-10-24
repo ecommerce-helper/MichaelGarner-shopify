@@ -110,7 +110,7 @@
           "power-control"
         ],
         "item_width_mobile": 80,
-        "item_width_desktop": 40,
+        "item_width_desktop": 35,
         "snap_alignment": "snap-start",
         "align_items": "items-start",
         "labels_show_titles_and_captions": true,
