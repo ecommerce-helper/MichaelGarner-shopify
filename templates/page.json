@@ -41,7 +41,6 @@
     },
     "collection_carousel_7gX3Re": {
       "type": "collection-carousel",
-      "disabled": true,
       "name": "Collection (carousel)",
       "settings": {
         "title": "",

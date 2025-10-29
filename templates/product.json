@@ -22,7 +22,7 @@
         "enable_image_zoom": false,
         "video_mode": "autoplay",
         "video_playback": "inline",
-        "show_index_and_total_slides": true,
+        "show_index_and_total_slides": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
         "color_scheme": ""
@@ -102,8 +102,8 @@
         "desktop_layout": "two_column",
         "desktop_media_position": "left",
         "media_width_on_desktop": "5",
-        "mobile_media_layout": "carousel",
-        "desktop_media_layout": "carousel",
+        "mobile_media_layout": "carousel_with_thumbnails",
+        "desktop_media_layout": "carousel_with_thumbnails",
         "media_fit": "natural",
         "media_full_bleed": "none",
         "enable_image_zoom": false,
@@ -114,8 +114,8 @@
         "product_content_alignment": "top_left",
         "product_content_sticky": true,
         "color_scheme": "scheme_1",
-        "space_above": 0.5,
-        "space_below": 1
+        "space_above": 0,
+        "space_below": 0
       }
     },
     "related-products": {
