@@ -109,7 +109,7 @@
         "title": "",
         "collection": "light-modulators",
         "products_to_show": 18,
-        "show_view_all": false,
+        "show_view_all": true,
         "item_width_mobile": 80,
         "item_width_desktop": 40,
         "snap_alignment": "snap-start",
