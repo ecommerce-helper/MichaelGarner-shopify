@@ -55,7 +55,7 @@
         "show_top_border": false,
         "color_scheme": "scheme_2",
         "space_above": 0.5,
-        "space_below": 0
+        "space_below": 0.5
       }
     },
     "collection_carousel_7gX3Re": {
@@ -83,6 +83,25 @@
         "space_below": 0
       }
     },
+    "feature_text_BkWgDM": {
+      "type": "feature-text",
+      "name": "Feature text",
+      "settings": {
+        "richtext": "<p>LIGHT MODULATORS</p>",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "rte font-main",
+        "desktop_text_scale": 4,
+        "mobile_text_scale": 2,
+        "text_alignment": "text-center",
+        "content_width_on_desktop": "12",
+        "content_position_on_desktop": "center",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 0.5,
+        "space_below": 0.5
+      }
+    },
     "collection_carousel_YNeffg": {
       "type": "collection-carousel",
       "name": "Collection (carousel)",
@@ -108,6 +127,25 @@
         "space_below": 0
       }
     },
+    "feature_text_JBmedR": {
+      "type": "feature-text",
+      "name": "Feature text",
+      "settings": {
+        "richtext": "<p>CONNECTORS & CONDUCTORS</p>",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "rte font-main",
+        "desktop_text_scale": 4,
+        "mobile_text_scale": 2,
+        "text_alignment": "text-center",
+        "content_width_on_desktop": "12",
+        "content_position_on_desktop": "center",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 0.5,
+        "space_below": 0.5
+      }
+    },
     "collection_carousel_mtHKP8": {
       "type": "collection-carousel",
       "name": "Collection (carousel)",
@@ -131,6 +169,25 @@
         "color_scheme": "",
         "space_above": 1,
         "space_below": 1
+      }
+    },
+    "feature_text_74ihfC": {
+      "type": "feature-text",
+      "name": "Feature text",
+      "settings": {
+        "richtext": "<p>CONTROLS & POWER</p>",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "rte font-main",
+        "desktop_text_scale": 4,
+        "mobile_text_scale": 2,
+        "text_alignment": "text-center",
+        "content_width_on_desktop": "12",
+        "content_position_on_desktop": "center",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 0.5,
+        "space_below": 0.5
       }
     },
     "collection_carousel_jgTCaE": {
@@ -164,8 +221,11 @@
     "feature_text_YBnUD4",
     "feature_text_gj7tEr",
     "collection_carousel_7gX3Re",
+    "feature_text_BkWgDM",
     "collection_carousel_YNeffg",
+    "feature_text_JBmedR",
     "collection_carousel_mtHKP8",
+    "feature_text_74ihfC",
     "collection_carousel_jgTCaE"
   ]
 }
