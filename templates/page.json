@@ -39,6 +39,25 @@
         "space_below": 1
       }
     },
+    "feature_text_gj7tEr": {
+      "type": "feature-text",
+      "name": "Feature text",
+      "settings": {
+        "richtext": "<p>LIGHT ELEMENTS</p>",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "rte font-main",
+        "desktop_text_scale": 4,
+        "mobile_text_scale": 2,
+        "text_alignment": "text-center",
+        "content_width_on_desktop": "12",
+        "content_position_on_desktop": "center",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 0.5,
+        "space_below": 0
+      }
+    },
     "collection_carousel_7gX3Re": {
       "type": "collection-carousel",
       "name": "Collection (carousel)",
@@ -143,6 +162,7 @@
   "order": [
     "main",
     "feature_text_YBnUD4",
+    "feature_text_gj7tEr",
     "collection_carousel_7gX3Re",
     "collection_carousel_YNeffg",
     "collection_carousel_mtHKP8",
