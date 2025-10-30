@@ -40,7 +40,7 @@
       "type": "collection-list-carousel",
       "name": "Collection list (carousel)",
       "settings": {
-        "title": "Collection list carousel",
+        "title": "",
         "collection_list": [
           "trace",
           "light-modulators",
