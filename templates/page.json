@@ -58,67 +58,85 @@
         "labels_always_show_on_mobile": false,
         "show_index_and_total_slides": false,
         "quick_view": "disabled",
-        "product_info_text_alignment": "left",
+        "product_info_text_alignment": "center",
         "color_scheme": "",
         "space_above": 0,
         "space_below": 0
       }
     },
-    "collection_list_6kJtVq": {
-      "type": "collection-list",
-      "disabled": true,
-      "name": "Collection list",
-      "settings": {
-        "title": "Collection list",
-        "collection_list": [
-          "trace",
-          "light-modulators",
-          "conductors-accessories",
-          "power-control"
-        ],
-        "grid_type": "standard",
-        "mobile_columns": "1",
-        "desktop_columns": 4,
-        "standard_layout_align_items": "items-start",
-        "modular_layout_variation": 1,
-        "modular_grid_item_aspect_ratio": 1,
-        "modular_no_crop_media_mobile": false,
-        "irregular_layout_variation": 1,
-        "irregular_alignment_of_items": "items-center justify-center",
-        "media_aspect_ratio": "natural",
-        "media_fill_space": false,
-        "labels_show_titles_and_captions": true,
-        "labels_display": "below_media",
-        "labels_always_show_on_mobile": false,
-        "color_scheme": "",
-        "space_above": 1,
-        "space_below": 1,
-        "disable_left_and_right_margins": false,
-        "remove_grid_gaps": false
-      }
-    },
-    "collection_list_carousel_r8RayL": {
-      "type": "collection-list-carousel",
-      "name": "Collection list (carousel)",
+    "collection_carousel_YNeffg": {
+      "type": "collection-carousel",
+      "name": "Collection (carousel)",
       "settings": {
         "title": "",
-        "collection_list": [
-          "trace",
-          "light-modulators",
-          "conductors-accessories",
-          "power-control"
-        ],
+        "collection": "light-modulators",
+        "products_to_show": 18,
+        "show_view_all": false,
         "item_width_mobile": 80,
-        "item_width_desktop": 35,
+        "item_width_desktop": 40,
+        "snap_alignment": "snap-start",
+        "align_items": "items-center",
+        "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "center",
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
+    },
+    "collection_carousel_mtHKP8": {
+      "type": "collection-carousel",
+      "name": "Collection (carousel)",
+      "settings": {
+        "title": "",
+        "collection": "conductors-accessories",
+        "products_to_show": 6,
+        "show_view_all": false,
+        "item_width_mobile": 80,
+        "item_width_desktop": 40,
         "snap_alignment": "snap-start",
         "align_items": "items-start",
         "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": false,
         "labels_display": "below_media",
+        "labels_show_product_vendor": false,
         "labels_always_show_on_mobile": false,
         "show_index_and_total_slides": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "center",
         "color_scheme": "",
-        "space_above": 0,
-        "space_below": 0
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "collection_carousel_jgTCaE": {
+      "type": "collection-carousel",
+      "name": "Collection (carousel)",
+      "settings": {
+        "title": "",
+        "collection": "power-control",
+        "products_to_show": 6,
+        "show_view_all": false,
+        "item_width_mobile": 80,
+        "item_width_desktop": 40,
+        "snap_alignment": "snap-start",
+        "align_items": "items-center",
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
       }
     }
   },
@@ -126,7 +144,8 @@
     "main",
     "feature_text_YBnUD4",
     "collection_carousel_7gX3Re",
-    "collection_list_6kJtVq",
-    "collection_list_carousel_r8RayL"
+    "collection_carousel_YNeffg",
+    "collection_carousel_mtHKP8",
+    "collection_carousel_jgTCaE"
   ]
 }
