@@ -11,6 +11,7 @@
   "sections": {
     "video_JhP7nK": {
       "type": "video",
+      "disabled": true,
       "name": "Video",
       "settings": {
         "title": "",
@@ -24,6 +25,7 @@
     },
     "custom_liquid_z3mEEh": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "title": "",
@@ -38,6 +40,7 @@
     },
     "collection_list_carousel_9rc98f": {
       "type": "collection-list-carousel",
+      "disabled": true,
       "name": "Collection list (carousel)",
       "settings": {
         "title": "",
@@ -173,6 +176,7 @@
         "image_k9YWWW",
         "image_xEkXiF"
       ],
+      "disabled": true,
       "name": "Collage",
       "settings": {
         "title": "",
@@ -197,12 +201,48 @@
         "disable_left_and_right_margins": false,
         "remove_grid_gaps": true
       }
+    },
+    "image_with_text_GtzfmM": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/LM2_Noisy_Nubs_Closeup.png",
+        "media_aspect_ratio": "natural",
+        "image_position_on_desktop": "left",
+        "enable_full_bleed": false,
+        "title": "New Products Coming in 2026",
+        "heading_size": "text-heading-standard",
+        "richtext": "",
+        "cta_link": "",
+        "cta_label": "",
+        "image_width_on_desktop": "8",
+        "content_width_on_desktop": "1.0",
+        "content_alignment": "lg:items-top lg:justify-start",
+        "show_top_border": false,
+        "color_scheme": "scheme_2",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "newsletter_b9FMei": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "title": "Sign up to our mailing list",
+        "richtext": "<p>For Launch Announcement</p>",
+        "show_top_border": false,
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
     }
   },
   "order": [
     "video_JhP7nK",
     "custom_liquid_z3mEEh",
     "collection_list_carousel_9rc98f",
-    "collage_TFL3B4"
+    "collage_TFL3B4",
+    "image_with_text_GtzfmM",
+    "newsletter_b9FMei"
   ]
 }
