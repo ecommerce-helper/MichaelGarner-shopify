@@ -57,11 +57,121 @@
         "space_above": 0.5,
         "space_below": 0.5
       }
+    },
+    "custom_main_carousel_wpHCFq": {
+      "type": "custom-main-carousel",
+      "blocks": {
+        "main_image_wYCtWK": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-12.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_m3FnLA": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-13_ad09cf94-c323-4573-8694-4a080e2a3af5.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_HqHkWb": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_qA46zk": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
+            "main_carousel_text": ""
+          }
+        },
+        "main_image_nnRLyU": {
+          "type": "main_image",
+          "settings": {
+            "main_carousel_image": "shopify://shop_images/Meter_In_Situ_1.png",
+            "main_carousel_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_image_wYCtWK",
+        "main_image_m3FnLA",
+        "main_image_HqHkWb",
+        "main_image_qA46zk",
+        "main_image_nnRLyU"
+      ],
+      "name": "Custom Main Carousel",
+      "settings": {
+        "main_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "main_carousel_top_border": 10,
+        "main_carousel_bottom_border": 20,
+        "auto_slide": true,
+        "auto_main_slide_speed": 3000
+      }
+    },
+    "custom_thumb_carousel_6kfqwq": {
+      "type": "custom-thumb-carousel",
+      "blocks": {
+        "thumb_image_VKrxgJ": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-16_f61e6756-2a8e-4ade-86fc-202a57a8c1d3.png"
+          }
+        },
+        "thumb_image_YPHL73": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
+          }
+        },
+        "thumb_image_MLQtDF": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-17.png"
+          }
+        },
+        "thumb_image_wEEnVR": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
+          }
+        },
+        "thumb_image_cXic37": {
+          "type": "thumb_image",
+          "settings": {
+            "child_carousel_image": "shopify://shop_images/Manifold-Trace-Imagery-18.png"
+          }
+        }
+      },
+      "block_order": [
+        "thumb_image_VKrxgJ",
+        "thumb_image_YPHL73",
+        "thumb_image_MLQtDF",
+        "thumb_image_wEEnVR",
+        "thumb_image_cXic37"
+      ],
+      "name": "Custom Thumbnail Carousel",
+      "settings": {
+        "child_carousel_title": "",
+        "main_carousel_text_border": 10,
+        "child_carousel_top_border": 10,
+        "child_carousel_bottom_border": 20,
+        "thumb_carousel_image_gaps": 10,
+        "auto_slide": true,
+        "auto_thumb_slide_speed": 3000
+      }
     }
   },
   "order": [
     "main",
     "feature_text_YBnUD4",
-    "feature_text_gj7tEr"
+    "feature_text_gj7tEr",
+    "custom_main_carousel_wpHCFq",
+    "custom_thumb_carousel_6kfqwq"
   ]
 }
