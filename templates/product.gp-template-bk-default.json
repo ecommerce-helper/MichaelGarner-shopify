@@ -1,0 +1,297 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_media_slideshow_ggXRTa": {
+      "type": "product-media-slideshow",
+      "name": "Product media slideshow",
+      "settings": {
+        "hide_featured_media": true,
+        "mode": "horizontal",
+        "style": "full_screen",
+        "section_height": "h-screen-50",
+        "section_height_desktop": "same_as_mobile",
+        "max_width_of_slides": 80,
+        "enable_image_zoom": false,
+        "video_mode": "autoplay",
+        "video_playback": "inline",
+        "show_index_and_total_slides": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": ""
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "space_above": 1
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "space_above": 1
+          }
+        },
+        "specifications": {
+          "type": "specifications",
+          "disabled": true,
+          "settings": {
+            "content_text_alignment": "text-left",
+            "text_color": "text-scheme-text",
+            "show_borders": true,
+            "space_above": 1,
+            "heading_1": "Artist",
+            "content_1": "<p>Robert Frederick Blum</p>",
+            "heading_2": "Nationality",
+            "content_2": "<p>American</p>",
+            "heading_3": "Year",
+            "content_3": "<p>1898</p>",
+            "heading_4": "Style",
+            "content_4": "<p>Landscape</p>",
+            "heading_5": "",
+            "content_5": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "truncate_description": false,
+            "max_words": 30,
+            "space_above": 1
+          }
+        },
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_option_labels": false,
+            "option_style": "buttons",
+            "space_above": 1
+          }
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "enable_payment_button": false,
+            "space_above": 1,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "specifications",
+        "description",
+        "variant-picker",
+        "buy-buttons"
+      ],
+      "settings": {
+        "desktop_layout": "two_column",
+        "desktop_media_position": "left",
+        "media_width_on_desktop": "5",
+        "mobile_media_layout": "carousel_with_thumbnails",
+        "desktop_media_layout": "carousel_with_thumbnails",
+        "media_fit": "natural",
+        "media_full_bleed": "none",
+        "enable_image_zoom": false,
+        "enable_video_looping": true,
+        "enable_video_autoplay": true,
+        "single_media_mode": true,
+        "product_content_width_on_desktop": "0.5",
+        "product_content_alignment": "top_left",
+        "product_content_sticky": true,
+        "color_scheme": "scheme_1",
+        "space_above": 0,
+        "space_below": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "title": "You may also like",
+        "products_to_show": 3,
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 4,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "scheme_1",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "featured_product_WPEPhj": {
+      "type": "featured-product",
+      "blocks": {
+        "title_zAVJXk": {
+          "type": "title",
+          "settings": {
+            "space_above": 1
+          }
+        },
+        "price_9hUVPe": {
+          "type": "price",
+          "settings": {
+            "space_above": 1
+          }
+        },
+        "variant_picker_KMVaUa": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_option_labels": false,
+            "option_style": "buttons",
+            "space_above": 1,
+            "enable_color_swatches": false
+          }
+        },
+        "buy_buttons_iBmdYJ": {
+          "type": "buy_buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "space_above": 1,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title_zAVJXk",
+        "price_9hUVPe",
+        "variant_picker_KMVaUa",
+        "buy_buttons_iBmdYJ"
+      ],
+      "disabled": true,
+      "name": "Featured product",
+      "settings": {
+        "product": "meter",
+        "desktop_media_position": "left",
+        "media_width_on_desktop": "6",
+        "mobile_media_layout": "carousel_with_thumbnails",
+        "desktop_media_layout": "carousel",
+        "media_fit": "natural",
+        "media_full_bleed": "none",
+        "enable_image_zoom": false,
+        "enable_video_looping": true,
+        "enable_video_autoplay": true,
+        "single_media_mode": false,
+        "product_content_width_on_desktop": "1.0",
+        "product_content_alignment": "top_left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "rich_text_6q7E9f": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "title": "Heading",
+        "richtext": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "text_alignment": "text-left",
+        "cta_link": "",
+        "cta_label": "",
+        "show_top_border": false,
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "1760033911c71a3415": {
+      "type": "apps",
+      "blocks": {
+        "slider_revolution_slider_general_rGd8RG": {
+          "type": "shopify://apps/slider-revolution/blocks/slider_general/d2c2325b-ecb9-42b8-a0b0-ca2ffb6e3203",
+          "disabled": true,
+          "settings": {
+            "slider_id": "slider-1",
+            "hide_on_desktop": false,
+            "hide_on_tablet": false,
+            "hide_on_mobile": false,
+            "rev_section_heading": "",
+            "rev_section_sub_heading": "",
+            "rev_section_heading_size": 30,
+            "rev_section_sub_heading_size": 15,
+            "rev_section_heading_align": "center",
+            "rev_section_heading_color": "",
+            "rev_section_sub_heading_color": "",
+            "rev_section_bg_color": "",
+            "rev_slider_sec_pad_top": 0,
+            "rev_slider_sec_pad_bot": 0,
+            "rev_slider_sec_mar_top": 0,
+            "rev_slider_sec_mar_bot": 0
+          }
+        }
+      },
+      "block_order": [
+        "slider_revolution_slider_general_rGd8RG"
+      ],
+      "settings": {}
+    },
+    "products_carousel_myiUQM": {
+      "type": "products-carousel",
+      "disabled": true,
+      "name": "Products (carousel)",
+      "settings": {
+        "title": "",
+        "product_list": [
+          "glo",
+          "meter"
+        ],
+        "item_width_mobile": 80,
+        "item_width_desktop": 20,
+        "snap_alignment": "snap-start",
+        "align_items": "items-start",
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "show_index_and_total_slides": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1
+      }
+    }
+  },
+  "order": [
+    "product_media_slideshow_ggXRTa",
+    "main",
+    "related-products",
+    "featured_product_WPEPhj",
+    "rich_text_6q7E9f",
+    "1760033911c71a3415",
+    "products_carousel_myiUQM"
+  ]
+}

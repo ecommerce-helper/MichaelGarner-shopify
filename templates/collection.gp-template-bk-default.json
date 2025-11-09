@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "enable_full_bleed": true,
+        "collection_image_aspect_ratio": "1.778",
+        "color_scheme": "scheme_1",
+        "space_above": 1,
+        "space_below": 1
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "filter": {
+          "type": "filter_and_sort",
+          "settings": {
+            "desktop_filter_layout": "stacked",
+            "stacked_filter_style": "text",
+            "enable_filtering": true,
+            "expand_filters": true,
+            "show_filter_count": true,
+            "enable_color_swatch_filters": false,
+            "enable_sorting": true
+          }
+        }
+      },
+      "block_order": [
+        "filter"
+      ],
+      "disabled": true,
+      "settings": {
+        "products_to_show": 2,
+        "linklist": "",
+        "grid_type": "standard",
+        "mobile_columns": "2",
+        "desktop_columns": 4,
+        "standard_layout_align_items": "items-baseline",
+        "modular_layout_variation": 3,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-top justify-between",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": true,
+        "labels_show_titles_and_captions": false,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "left",
+        "color_scheme": "scheme_1",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "featured_collection_fRLGLj": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "",
+        "collection": "trace",
+        "products_to_show": 6,
+        "show_view_all": true,
+        "grid_type": "standard",
+        "mobile_columns": "1",
+        "desktop_columns": 3,
+        "standard_layout_align_items": "items-center",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_show_product_prices": false,
+        "labels_display": "below_media",
+        "labels_show_product_vendor": false,
+        "labels_always_show_on_mobile": false,
+        "quick_view": "disabled",
+        "product_info_text_alignment": "center",
+        "color_scheme": "",
+        "space_above": 1,
+        "space_below": 1,
+        "disable_left_and_right_margins": false,
+        "remove_grid_gaps": false
+      }
+    },
+    "feature_text_zX9cGy": {
+      "type": "feature-text",
+      "name": "Feature text",
+      "settings": {
+        "richtext": "<p>Trace Elements include Glo, Glance, and Meter.  These objects are the light fixtures of the Trace system.</p>",
+        "cta_link": "",
+        "cta_label": "",
+        "font": "font-heading",
+        "desktop_text_scale": 1,
+        "mobile_text_scale": 1,
+        "text_alignment": "text-center",
+        "content_width_on_desktop": "12",
+        "content_position_on_desktop": "left",
+        "show_top_border": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "featured_collection_fRLGLj",
+    "feature_text_zX9cGy"
+  ]
+}
