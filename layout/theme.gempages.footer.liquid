@@ -195,7 +195,9 @@
 
     {{ 'base.bundle.css' | asset_url | stylesheet_tag }}
     {% include 'add_header_assets' %}
-  </head>
+  
+  {% render 'shogun-head' %}
+</head>
 
   <body>
     {%- if settings.enable_sidebar -%}
