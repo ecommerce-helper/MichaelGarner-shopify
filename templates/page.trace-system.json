@@ -58,6 +58,61 @@
         "space_below": 0.5
       }
     },
+    "image_gallery_4caPkr": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_VgrhUz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howto1.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_ei4mJP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howto2.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_3kVjVt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howto3.png",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_VgrhUz",
+        "image_ei4mJP",
+        "image_3kVjVt"
+      ],
+      "name": "Image gallery",
+      "settings": {
+        "title": "",
+        "grid_type": "standard",
+        "mobile_columns": "2",
+        "desktop_columns": 1,
+        "standard_layout_align_items": "items-start",
+        "modular_layout_variation": 1,
+        "modular_grid_item_aspect_ratio": 1,
+        "modular_no_crop_media_mobile": false,
+        "irregular_layout_variation": 1,
+        "irregular_alignment_of_items": "items-center justify-center",
+        "media_aspect_ratio": "natural",
+        "media_fill_space": false,
+        "labels_show_titles_and_captions": true,
+        "labels_display": "below_media",
+        "labels_always_show_on_mobile": false,
+        "color_scheme": "",
+        "space_above": 0,
+        "space_below": 0
+      }
+    },
     "custom_main_carousel_wpHCFq": {
       "type": "custom-main-carousel",
       "blocks": {
@@ -192,6 +247,7 @@
     "main",
     "feature_text_YBnUD4",
     "feature_text_gj7tEr",
+    "image_gallery_4caPkr",
     "custom_main_carousel_wpHCFq",
     "custom_thumb_carousel_6kfqwq"
   ]
