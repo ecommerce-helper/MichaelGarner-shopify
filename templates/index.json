@@ -8,241 +8,241 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {
-    "video_JhP7nK": {
-      "type": "video",
-      "disabled": true,
-      "name": "Video",
-      "settings": {
-        "title": "",
-        "video": "shopify://files/videos/Manifold-Trace-Video-FINAL.mp4",
-        "mode": "autoplay",
-        "playback": "inline",
-        "caption": "",
-        "link": "",
-        "enable_full_bleed": true
-      }
-    },
-    "custom_liquid_z3mEEh": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "Custom Liquid",
-      "settings": {
-        "title": "",
-        "custom_liquid": "<center><a href=\"LINK TO WHERE YOU WANT IMAGE TO GO WHEN CLLICKED\"> <img src=\"https://cdn.shopify.com/s/files/1/0821/2548/8426/files/tq0sfld-kickstarter-logo-green.png?v=1698423343&width=960\" alt=\"PICTURE NAME\" style=\"width: 350px;\"> </a>",
-        "text_alignment": "text-center",
-        "liquid_only": false,
-        "show_top_border": false,
-        "color_scheme": "",
-        "space_above": 0.5,
-        "space_below": 0.5
-      }
-    },
-    "collection_list_carousel_9rc98f": {
-      "type": "collection-list-carousel",
-      "disabled": true,
-      "name": "Collection list (carousel)",
-      "settings": {
-        "title": "",
-        "collection_list": [
-          "trace",
-          "light-modulators",
-          "conductors-accessories"
-        ],
-        "item_width_mobile": 65,
-        "item_width_desktop": 40,
-        "snap_alignment": "snap-start",
-        "align_items": "items-center",
-        "labels_show_titles_and_captions": true,
-        "labels_display": "below_media",
-        "labels_always_show_on_mobile": false,
-        "show_index_and_total_slides": true,
-        "color_scheme": "",
-        "space_above": 0,
-        "space_below": 0
-      }
-    },
-    "collage_TFL3B4": {
-      "type": "collage",
-      "blocks": {
-        "image_NCjwt4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-4.png",
-            "caption": "",
-            "link": ""
-          }
+    "sections": {
+        "video_JhP7nK": {
+            "type": "video",
+            "disabled": true,
+            "name": "Video",
+            "settings": {
+                "title": "",
+                "video": "shopify://files/videos/Manifold-Trace-Video-FINAL.mp4",
+                "mode": "autoplay",
+                "playback": "inline",
+                "caption": "",
+                "link": "",
+                "enable_full_bleed": true
+            }
         },
-        "image_9LwQrM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-5.png",
-            "caption": "",
-            "link": ""
-          }
+        "custom_liquid_z3mEEh": {
+            "type": "custom-liquid",
+            "disabled": true,
+            "name": "Custom Liquid",
+            "settings": {
+                "title": "",
+                "custom_liquid": "<center><a href=\"LINK TO WHERE YOU WANT IMAGE TO GO WHEN CLLICKED\"> <img src=\"https://cdn.shopify.com/s/files/1/0821/2548/8426/files/tq0sfld-kickstarter-logo-green.png?v=1698423343&width=960\" alt=\"PICTURE NAME\" style=\"width: 350px;\"> </a>",
+                "text_alignment": "text-center",
+                "liquid_only": false,
+                "show_top_border": false,
+                "color_scheme": "",
+                "space_above": 0.5,
+                "space_below": 0.5
+            }
         },
-        "image_JUbcxA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
-            "caption": "",
-            "link": ""
-          }
+        "collection_list_carousel_9rc98f": {
+            "type": "collection-list-carousel",
+            "disabled": true,
+            "name": "Collection list (carousel)",
+            "settings": {
+                "title": "",
+                "collection_list": [
+                    "trace",
+                    "light-modulators",
+                    "conductors-accessories"
+                ],
+                "item_width_mobile": 65,
+                "item_width_desktop": 40,
+                "snap_alignment": "snap-start",
+                "align_items": "items-center",
+                "labels_show_titles_and_captions": true,
+                "labels_display": "below_media",
+                "labels_always_show_on_mobile": false,
+                "show_index_and_total_slides": true,
+                "color_scheme": "",
+                "space_above": 0,
+                "space_below": 0
+            }
         },
-        "image_jwDaUP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
-            "caption": "",
-            "link": ""
-          }
+        "collage_TFL3B4": {
+            "type": "collage",
+            "blocks": {
+                "image_NCjwt4": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-4.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_9LwQrM": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-5.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_JUbcxA": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-6.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_jwDaUP": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-9_92c368cb-dee6-428a-8eb2-7e593c76de9b.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_Cn4z6U": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-3.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_q9Ey4A": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/LM3_ShiledSpherical.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_YT4ghB": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-13_ad09cf94-c323-4573-8694-4a080e2a3af5.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_iXLLB6": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/LM2_Noisy_Bump.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_zTAHU7": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/LM2_Noisy_Nubs_Closeup.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_fjHpgV": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/Manifold-Trace-Imagery-16.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_k9YWWW": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/moire_1_e37b11e1-fa09-48af-8d5d-9a321722d29a.jpg",
+                        "caption": "",
+                        "link": ""
+                    }
+                },
+                "image_xEkXiF": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify://shop_images/T_Connect_on_Trace.png",
+                        "caption": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": [
+                "image_NCjwt4",
+                "image_9LwQrM",
+                "image_JUbcxA",
+                "image_jwDaUP",
+                "image_Cn4z6U",
+                "image_q9Ey4A",
+                "image_YT4ghB",
+                "image_iXLLB6",
+                "image_zTAHU7",
+                "image_fjHpgV",
+                "image_k9YWWW",
+                "image_xEkXiF"
+            ],
+            "disabled": true,
+            "name": "Collage",
+            "settings": {
+                "title": "",
+                "grid_type": "modular",
+                "mobile_columns": "2",
+                "desktop_columns": 2,
+                "standard_layout_align_items": "items-start",
+                "modular_layout_variation": 1,
+                "modular_grid_item_aspect_ratio": 1,
+                "modular_no_crop_media_mobile": false,
+                "irregular_layout_variation": 1,
+                "irregular_alignment_of_items": "items-center justify-center",
+                "media_aspect_ratio": "1",
+                "media_fill_space": false,
+                "labels_show_titles_and_captions": true,
+                "labels_show_product_prices": false,
+                "labels_display": "text_overlay_on_hover",
+                "labels_always_show_on_mobile": false,
+                "color_scheme": "",
+                "space_above": 1,
+                "space_below": 1,
+                "disable_left_and_right_margins": false,
+                "remove_grid_gaps": true
+            }
         },
-        "image_Cn4z6U": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-3.png",
-            "caption": "",
-            "link": ""
-          }
+        "image_with_text_GtzfmM": {
+            "type": "image-with-text",
+            "name": "Image with text",
+            "settings": {
+                "image": "shopify://shop_images/LM2_Noisy_Nubs_Closeup.png",
+                "media_aspect_ratio": "natural",
+                "image_position_on_desktop": "left",
+                "enable_full_bleed": false,
+                "title": "New Products Coming in 2026",
+                "heading_size": "text-heading-standard",
+                "richtext": "",
+                "cta_link": "",
+                "cta_label": "",
+                "image_width_on_desktop": "8",
+                "content_width_on_desktop": "1.0",
+                "content_alignment": "lg:items-top lg:justify-start",
+                "show_top_border": false,
+                "color_scheme": "scheme_2",
+                "space_above": 1,
+                "space_below": 1
+            }
         },
-        "image_q9Ey4A": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LM3_ShiledSpherical.png",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_YT4ghB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-13_ad09cf94-c323-4573-8694-4a080e2a3af5.png",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_iXLLB6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LM2_Noisy_Bump.png",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_zTAHU7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LM2_Noisy_Nubs_Closeup.png",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_fjHpgV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Manifold-Trace-Imagery-16.png",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_k9YWWW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/moire_1_e37b11e1-fa09-48af-8d5d-9a321722d29a.jpg",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "image_xEkXiF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/T_Connect_on_Trace.png",
-            "caption": "",
-            "link": ""
-          }
+        "newsletter_b9FMei": {
+            "type": "newsletter",
+            "name": "Newsletter",
+            "settings": {
+                "title": "Sign up to our mailing list",
+                "richtext": "<p>For Launch Announcement</p>",
+                "show_top_border": false,
+                "color_scheme": "",
+                "space_above": 1,
+                "space_below": 1
+            }
         }
-      },
-      "block_order": [
-        "image_NCjwt4",
-        "image_9LwQrM",
-        "image_JUbcxA",
-        "image_jwDaUP",
-        "image_Cn4z6U",
-        "image_q9Ey4A",
-        "image_YT4ghB",
-        "image_iXLLB6",
-        "image_zTAHU7",
-        "image_fjHpgV",
-        "image_k9YWWW",
-        "image_xEkXiF"
-      ],
-      "disabled": true,
-      "name": "Collage",
-      "settings": {
-        "title": "",
-        "grid_type": "modular",
-        "mobile_columns": "2",
-        "desktop_columns": 2,
-        "standard_layout_align_items": "items-start",
-        "modular_layout_variation": 1,
-        "modular_grid_item_aspect_ratio": 1,
-        "modular_no_crop_media_mobile": false,
-        "irregular_layout_variation": 1,
-        "irregular_alignment_of_items": "items-center justify-center",
-        "media_aspect_ratio": "1",
-        "media_fill_space": false,
-        "labels_show_titles_and_captions": true,
-        "labels_show_product_prices": false,
-        "labels_display": "text_overlay_on_hover",
-        "labels_always_show_on_mobile": false,
-        "color_scheme": "",
-        "space_above": 1,
-        "space_below": 1,
-        "disable_left_and_right_margins": false,
-        "remove_grid_gaps": true
-      }
     },
-    "image_with_text_GtzfmM": {
-      "type": "image-with-text",
-      "name": "Image with text",
-      "settings": {
-        "image": "shopify://shop_images/LM2_Noisy_Nubs_Closeup.png",
-        "media_aspect_ratio": "natural",
-        "image_position_on_desktop": "left",
-        "enable_full_bleed": false,
-        "title": "New Products Coming in 2026",
-        "heading_size": "text-heading-standard",
-        "richtext": "",
-        "cta_link": "",
-        "cta_label": "",
-        "image_width_on_desktop": "8",
-        "content_width_on_desktop": "1.0",
-        "content_alignment": "lg:items-top lg:justify-start",
-        "show_top_border": false,
-        "color_scheme": "scheme_2",
-        "space_above": 1,
-        "space_below": 1
-      }
-    },
-    "newsletter_b9FMei": {
-      "type": "newsletter",
-      "name": "Newsletter",
-      "settings": {
-        "title": "Sign up to our mailing list",
-        "richtext": "<p>For Launch Announcement</p>",
-        "show_top_border": false,
-        "color_scheme": "",
-        "space_above": 1,
-        "space_below": 1
-      }
-    }
-  },
-  "order": [
-    "video_JhP7nK",
-    "custom_liquid_z3mEEh",
-    "collection_list_carousel_9rc98f",
-    "collage_TFL3B4",
-    "image_with_text_GtzfmM",
-    "newsletter_b9FMei"
-  ]
+    "order": [
+        "video_JhP7nK",
+        "custom_liquid_z3mEEh",
+        "collection_list_carousel_9rc98f",
+        "collage_TFL3B4",
+        "image_with_text_GtzfmM",
+        "newsletter_b9FMei"
+    ]
 }
