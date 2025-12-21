@@ -42,6 +42,14 @@
     "image_gallery_4caPkr": {
       "type": "image-gallery",
       "blocks": {
+        "image_dnGgAt": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
         "image_VgrhUz": {
           "type": "image",
           "settings": {
@@ -50,10 +58,34 @@
             "link": ""
           }
         },
+        "image_K9Jajk": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_e3tNHA": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "caption": "",
+            "link": ""
+          }
+        },
         "image_ei4mJP": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/howto2.png",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "image_rjQCa7": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
             "caption": "",
             "link": ""
           }
@@ -68,8 +100,12 @@
         }
       },
       "block_order": [
+        "image_dnGgAt",
         "image_VgrhUz",
+        "image_K9Jajk",
+        "image_e3tNHA",
         "image_ei4mJP",
+        "image_rjQCa7",
         "image_3kVjVt"
       ],
       "name": "Image gallery",
