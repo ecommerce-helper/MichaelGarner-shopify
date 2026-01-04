@@ -195,7 +195,7 @@
         "desktop_media_position": "left",
         "media_width_on_desktop": "6",
         "mobile_media_layout": "carousel_with_thumbnails",
-        "desktop_media_layout": "carousel",
+        "desktop_media_layout": "carousel_with_thumbnails",
         "media_fit": "natural",
         "media_full_bleed": "none",
         "enable_image_zoom": false,
