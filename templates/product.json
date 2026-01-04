@@ -81,7 +81,6 @@
         },
         "buy-buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "enable_payment_button": false,
             "space_above": 1,
@@ -228,33 +227,6 @@
     },
     "1760033911c71a3415": {
       "type": "apps",
-      "blocks": {
-        "slider_revolution_slider_general_rGd8RG": {
-          "type": "shopify://apps/slider-revolution/blocks/slider_general/d2c2325b-ecb9-42b8-a0b0-ca2ffb6e3203",
-          "disabled": true,
-          "settings": {
-            "slider_id": "slider-1",
-            "hide_on_desktop": false,
-            "hide_on_tablet": false,
-            "hide_on_mobile": false,
-            "rev_section_heading": "",
-            "rev_section_sub_heading": "",
-            "rev_section_heading_size": 30,
-            "rev_section_sub_heading_size": 15,
-            "rev_section_heading_align": "center",
-            "rev_section_heading_color": "",
-            "rev_section_sub_heading_color": "",
-            "rev_section_bg_color": "",
-            "rev_slider_sec_pad_top": 0,
-            "rev_slider_sec_pad_bot": 0,
-            "rev_slider_sec_mar_top": 0,
-            "rev_slider_sec_mar_bot": 0
-          }
-        }
-      },
-      "block_order": [
-        "slider_revolution_slider_general_rGd8RG"
-      ],
       "settings": {}
     },
     "products_carousel_myiUQM": {
