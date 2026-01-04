@@ -9,32 +9,13 @@
  */
 {
   "sections": {
-    "product_media_slideshow_ggXRTa": {
-      "type": "product-media-slideshow",
-      "name": "Product media slideshow",
-      "settings": {
-        "hide_featured_media": true,
-        "mode": "horizontal",
-        "style": "full_screen",
-        "section_height": "h-screen-50",
-        "section_height_desktop": "same_as_mobile",
-        "max_width_of_slides": 80,
-        "enable_image_zoom": false,
-        "video_mode": "autoplay",
-        "video_playback": "inline",
-        "show_index_and_total_slides": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "color_scheme": ""
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "title": {
           "type": "title",
           "settings": {
-            "space_above": 1
+            "space_above": 2
           }
         },
         "price": {
@@ -101,11 +82,11 @@
         "desktop_layout": "two_column",
         "desktop_media_position": "left",
         "media_width_on_desktop": "5",
-        "mobile_media_layout": "carousel_with_thumbnails",
+        "mobile_media_layout": "single_column",
         "desktop_media_layout": "carousel_with_thumbnails",
-        "media_fit": "natural",
-        "media_full_bleed": "none",
-        "enable_image_zoom": false,
+        "media_fit": "contain_to_square",
+        "media_full_bleed": "mobile_and_desktop",
+        "enable_image_zoom": true,
         "enable_video_looping": true,
         "enable_video_autoplay": true,
         "single_media_mode": true,
@@ -258,7 +239,6 @@
     }
   },
   "order": [
-    "product_media_slideshow_ggXRTa",
     "main",
     "related-products",
     "featured_product_WPEPhj",
